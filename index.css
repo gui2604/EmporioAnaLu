@@ -1,0 +1,18 @@
+body {
+    background-color: #593A2E;
+    
+}
+head{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: nome;
+    align-items: center;
+}
+
+ul {
+display: flex;
+justify-content: space-between;
+list-style-type: nome;
+align-items: center;
+padding: 20px;
+}
