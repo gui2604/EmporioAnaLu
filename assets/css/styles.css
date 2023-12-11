@@ -1,10 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
 * {
     padding: 0;
     box-sizing: border-box;
     margin: 0;
     list-style: none;
+    font-family: 'Irish Grover', cursive;
+    font-size: 3.2rem;
 }
 
 html {
     font-size: 62.5%;
+}
+
+.texto-reset{
+    list-style: none;
+    color: #fff;
+    text-decoration: none;
+}
+
+body {
+    background-color: #593A2E;
+}
+
+header{
+    display:flex;
+    width: 100%;
+}
+
+header nav{
+    justify-content: space-around;
+    background-color: #261B14;
+    border-radius: 27px;
+}
+
+header nav li a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 0 5% 0;
+    width:100%;
+}
+
+header nav li:hover{
+    background-color: #BF9D8A;
+    transition: .5s;
+}
+
+header section {
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-text{
+    color: #BF9D8A;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-bar {
+    border: 2px solid #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    width: 50%; /* Ou a largura que você preferir */
+    height: 40%;
+    background-color: #D9D9D9;
+  }
+  
+  .search-bar input[type="text"] {
+    border: none;
+    outline: none;
+    padding: 5px;
+    width: 90%;
+    background-color: #D9D9D9;
+    color: black;
+    border-right: 1px solid black;
+  }
+  
+  .search-bar button {
+    background: none;
+    cursor: pointer;
+  }
+
+  .search-bar button:hover{
+    background-color: #BF9D8A;
+    border: none;
+  }
+
+
+.slideshow_imagens{
+    margin: 3%;
+}
+
+.slideshow_item{
+    display: flex;
+    justify-content: center;
+    gap: 3%;
+}
+
+.wpp:hover{
+    background-color: #261B14;
+}
+
+.maps:hover {
+    background-color: #593A2E;
+}
+
+.logos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 300px;
+}
+
+footer {
+    color:#BF9D8A;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #261B14;
+    border-radius: 27px;
+}
+
+
+.local {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.texto_footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 30%;
+}
+
+.texto_footer p {
+    font-size: 2.5rem
 }
