@@ -1,0 +1,51 @@
+<header class="container-fluid">
+        <section class="topo">
+            <!-- logo1 MiniEmpório AnaLu -->
+            <a href="#"><img src="./assets/imagens/logo.png" alt="logo mini empório AnaLu"></a>
+            <!-- BARRA DE PESQUISA -->
+            <div class="search-bar ">
+                <input type="text" placeholder="O que você procura?" id="searchInput">
+                <button type="button" class="btn btn-default botao_lupa">
+                    <img src="./assets/imagens/search.png" alt="imagem de lupe de pesquisa">
+                </button>
+            </div>
+            <!-- Texto do Header -->
+            <div class="header-text">
+                <p>Horário de Atendimento</p>
+                <p>10h às 18h</p>
+            </div>
+        </section>
+        <!-- Barra de Navegação -->
+        <nav class="d-flex">
+            <li>
+                <a href="" class="texto-reset">
+                    <p class="texto-reset">Queijos</p>
+                    <img src="./assets/imagens/cheese.png" alt="ícone de queijo">
+                </a>
+            </li>
+            <li>
+                <a href="#" class="texto-reset">
+                    <p class="texto-reset">Pães de Queijo</p>
+                    <img src="./assets/imagens/bread.png" alt="ícone de pão">
+                </a>
+            </li>
+            <li>
+                <a href="#" class="texto-reset">
+                    <p>Doces</p>
+                    <img src="./assets/imagens/candy.png" alt="ícone de doce">
+                </a>
+            </li>
+            <li>
+                <a href="#" class="texto-reset">
+                    <p>Variedades</p>
+                    <img src="./assets/imagens/food.png" alt="ícone de variedades">
+                </a>
+            </li>
+            <li>
+                <a href="#" class="texto-reset">
+                    <p>Ofertas</p>
+                    <img src="/assets/imagens/discount.png" alt="ícone de desconto">
+                </a>
+            </li>
+        </nav>
+    </header>
