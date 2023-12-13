@@ -1,4 +1,4 @@
-<footer class="row container-fluid">
+    <footer class="row container-fluid">
         <!-- Localização -->
         <section class="col col-md-4 local">
             <p>Avenida das Macieiras, nº 357</p>
