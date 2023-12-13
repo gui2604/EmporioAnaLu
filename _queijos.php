@@ -22,7 +22,7 @@ $row_rs_produto = mysqli_fetch_assoc( $rs_produto );
     <?php include("header.php"); ?> 
 
     <main class="container-fluid">
-        <!-- PRODUTOS DA CATEGORIA: QUEIJOS -->
+        <?php include("conteudo.php"): ?>
 
         <?php include("lowMain.php"); ?>
     </main>
