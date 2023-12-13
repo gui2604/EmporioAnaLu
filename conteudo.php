@@ -1,12 +1,12 @@
 <div class="container-fluid">
-  <div class="alert alert-primary" role="alert" style="text-align: center">
+  <div class="seccao">
     <h1><?php // echo($row_rs_produto["categoria"])
 		$current_page = basename($_SERVER['PHP_SELF']);
-		if ($current_page == '_queijos.php'){
+		if ($current_page == 'queijos.php'){
 			echo('Queijos');
-		}else if($current_page == '_paes.php'){
+		}else if($current_page == 'paes.php'){
 			echo('Pães de Queijo');
-		}else if($current_page == '_doces.php'){
+		}else if($current_page == 'doces.php'){
 			echo('Doces');
 		}else{
 			echo('Produtos em Oferta');
@@ -23,9 +23,9 @@
     <section>
         <div class="row">
             <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12">
-                <h2><?php echo($row_rs_produto["nome"]) ?> </h2>
-                <p><?php echo($row_rs_produto["descricao"]) ?></p>
-                <p><?php echo($row_rs_produto["preco"]) ?></p>
+                <h2 class="titulo_produto"><?php echo($row_rs_produto["nome"]) ?> </h2>
+                <p class="descricao_produto">Descrição: <?php echo($row_rs_produto["descricao"]) ?></p>
+                <p class="preco_produto">Preço: R$<?php echo($row_rs_produto["preco"]) ?></p>
             </div>
             <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12"> <a href="./assets/imagens/<?php echo($row_rs_produto["imagem"]) ?>" title ="<?php echo($row_rs_produto["nome"]) ?>" data-lightbox="example-1"> <img src="assets/imagens/<?php echo($row_rs_produto["imagemThumb"]) ?>" alt="<?php echo($row_rs_produto["nome"]) ?>" title="<?php echo($row_rs_produto["nome"]) ?>" class="img-fluid"></a></div>
         </div>
@@ -36,9 +36,9 @@
         <div class="row">
             <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12"> <a href="./assets/imagens/<?php echo($row_rs_produto["imagem"]) ?>" title ="<?php echo($row_rs_produto["nome"]) ?>" data-lightbox="example-1"> <img src="assets/imagens/<?php echo($row_rs_produto["imagemThumb"]) ?>" alt="<?php echo($row_rs_produto["nome"]) ?>" title="<?php echo($row_rs_produto["nome"]) ?>" class="img-fluid"></a></div>
             <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12">
-                <h2><?php echo($row_rs_produto["nome"]) ?> </h2>
-                <p><?php echo($row_rs_produto["descricao"]) ?></p>
-                <p><?php echo($row_rs_produto["preco"]) ?></p>
+                <h2 class="titulo_produto"><?php echo($row_rs_produto["nome"]) ?> </h2>
+                <p class="descricao_produto">Descrição: <?php echo($row_rs_produto["descricao"]) ?></p>
+                <p class="preco_produto">Preço: R$<?php echo($row_rs_produto["preco"]) ?></p>
             </div>
         </div>
     </section>

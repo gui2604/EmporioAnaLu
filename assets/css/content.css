@@ -1,0 +1,22 @@
+.seccao {
+    color: #BF9D8A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    font-size: 3.5rem;
+}
+
+.titulo_produto {
+    color: #fff;
+    font-size: 3rem;
+}
+
+.descricao_produto {
+    color: white;
+    font-size: 2rem;
+}
+
+.preco_produto {
+    color: white;
+}

@@ -1,7 +1,7 @@
 <header class="container-fluid">
         <section class="topo">
             <!-- logo1 MiniEmpório AnaLu -->
-            <a href="#"><img src="./assets/imagens/logo.png" alt="logo mini empório AnaLu"></a>
+            <a href="index.php"><img src="./assets/imagens/logo.png" alt="logo mini empório AnaLu"></a>
             <!-- BARRA DE PESQUISA -->
             <div class="search-bar ">
                 <input type="text" placeholder="O que você procura?" id="searchInput">
@@ -18,33 +18,33 @@
         <!-- Barra de Navegação -->
         <nav class="d-flex">
             <li>
-                <a href="#_queijos.php" class="texto-reset">
+                <a href="queijos.php" class="texto-reset">
                     <p class="texto-reset">Queijos</p>
                     <img src="./assets/imagens/cheese.png" alt="ícone de queijo">
                 </a>
             </li>
             <li>
-                <a href="#_paes.php" class="texto-reset">
+                <a href="paes.php" class="texto-reset">
                     <p class="texto-reset">Pães de Queijo</p>
                     <img src="./assets/imagens/bread.png" alt="ícone de pão">
                 </a>
             </li>
             <li>
-                <a href="#_doces.php" class="texto-reset">
+                <a href="doces.php" class="texto-reset">
                     <p>Doces</p>
                     <img src="./assets/imagens/candy.png" alt="ícone de doce">
                 </a>
             </li>
             <li>
-                <a href="#_variedades.php" class="texto-reset">
+                <a href="variedades.php" class="texto-reset">
                     <p>Variedades</p>
                     <img src="./assets/imagens/food.png" alt="ícone de variedades">
                 </a>
             </li>
             <li>
-                <a href="#_ofertas.php" class="texto-reset">
+                <a href="ofertas.php" class="texto-reset">
                     <p>Ofertas</p>
-                    <img src="/assets/imagens/discount.png" alt="ícone de desconto">
+                    <img src="./assets/imagens/discount.png" alt="ícone de desconto">
                 </a>
             </li>
         </nav>
