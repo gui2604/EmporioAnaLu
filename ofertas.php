@@ -1,6 +1,6 @@
-<?php require("conectionBD.php");?>
+<?php require("conectionDB.php");?>
 <?php
-$query_rs_produto = "SELECT * FROM tb_produtos INNER JOIN tb_categorias ON tb_produtos.idCategoria = tb_categorias.idCategoria WHERE tb_produtos.ativo = 1 AND tb_produtos.idCategoria = 1 ORDER BY tb_produtos.idProduto DESC";
+$query_rs_produto = "SELECT * FROM tb_produtos INNER JOIN tb_categorias ON tb_produtos.idCategoria = tb_categorias.idCategoria WHERE tb_produtos.ativo = 1 AND tb_produtos.promocao = 1 ORDER BY tb_produtos.idProduto DESC";
 $rs_produto = mysqli_query( $conn_bd_emporio, $query_rs_produto )or die( mysqli_error( $conn_bd_emporio ) );
 $totalRow_rs_produto = mysqli_num_rows( $rs_produto );
 $row_rs_produto = mysqli_fetch_assoc( $rs_produto );
@@ -12,7 +12,7 @@ $row_rs_produto = mysqli_fetch_assoc( $rs_produto );
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Queijos do Mini Empório AnaLu</title>
+    <title>Produtos em Oferta do Mini Empório AnaLu</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
     <?php include("head_comon.php"); ?>
@@ -22,7 +22,7 @@ $row_rs_produto = mysqli_fetch_assoc( $rs_produto );
     <?php include("header.php"); ?> 
 
     <main class="container-fluid">
-        <?php include("conteudo.php"): ?>
+        <?php include("conteudo.php"); ?>
 
         <?php include("lowMain.php"); ?>
     </main>
