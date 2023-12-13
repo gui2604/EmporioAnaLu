@@ -18,31 +18,31 @@
         <!-- Barra de Navegação -->
         <nav class="d-flex">
             <li>
-                <a href="" class="texto-reset">
+                <a href="#_queijos.php" class="texto-reset">
                     <p class="texto-reset">Queijos</p>
                     <img src="./assets/imagens/cheese.png" alt="ícone de queijo">
                 </a>
             </li>
             <li>
-                <a href="#" class="texto-reset">
+                <a href="#_paes.php" class="texto-reset">
                     <p class="texto-reset">Pães de Queijo</p>
                     <img src="./assets/imagens/bread.png" alt="ícone de pão">
                 </a>
             </li>
             <li>
-                <a href="#" class="texto-reset">
+                <a href="#_doces.php" class="texto-reset">
                     <p>Doces</p>
                     <img src="./assets/imagens/candy.png" alt="ícone de doce">
                 </a>
             </li>
             <li>
-                <a href="#" class="texto-reset">
+                <a href="#_variedades.php" class="texto-reset">
                     <p>Variedades</p>
                     <img src="./assets/imagens/food.png" alt="ícone de variedades">
                 </a>
             </li>
             <li>
-                <a href="#" class="texto-reset">
+                <a href="#_ofertas.php" class="texto-reset">
                     <p>Ofertas</p>
                     <img src="/assets/imagens/discount.png" alt="ícone de desconto">
                 </a>
