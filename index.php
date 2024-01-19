@@ -5,7 +5,7 @@ $rs_produto = mysqli_query( $conn_bd_emporio, $query_rs_produto )or die( mysqli_
 $totalRow_rs_produto = mysqli_num_rows( $rs_produto );
 $row_rs_produto = mysqli_fetch_assoc( $rs_produto );
 ?>
-asdfujsdnfujsdnfud
+
 <!DOCTYPE html>
 <html lang="pt-br">
 

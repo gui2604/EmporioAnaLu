@@ -63,18 +63,9 @@ header section {
     justify-content: space-between;
     align-items: center;
     padding: 5px;
-    width: 50%; /* Ou a largura que você preferir */
+    width: 50%;
     height: 40%;
     background-color: #D9D9D9;
-  }
-  
-  .search-bar input[type="text"] {
-    border: none;
-    outline: none;
-    padding: 5px;
-    width: 90%;
-    background-color: #D9D9D9;
-    color: black;
   }
   
   .search-bar button {
