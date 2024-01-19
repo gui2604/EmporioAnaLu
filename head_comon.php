@@ -7,3 +7,4 @@
     <link rel="stylesheet" type="text/css" href="./assets/galeria/engine1/style.css">
     <link rel="stylesheet" href="./assets/css/medias.css">
     <link rel="stylesheet" href="./assets/css/content.css">
+    <link rel="stylesheet" href="./assets/css/carrossel.css">

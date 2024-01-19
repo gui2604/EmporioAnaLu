@@ -8,3 +8,4 @@
     <script src="./assets/lightbox2/dist/js/lightbox-plus-jquery.min.js"></script>
     <script src="galeria/engine1/wowslider.js"></script>
     <script src="galeria/engine1/script.js"></script>
+    <script src="./assets/js/carrossel.js"></script>

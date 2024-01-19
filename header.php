@@ -4,7 +4,7 @@
             <a href="index.php"><img src="./assets/imagens/logo.png" alt="logo mini empório AnaLu"></a>
             <!-- BARRA DE PESQUISA -->
             <form class="search-bar" action="resultado-busca.php" method="get" id="form_busca">
-                <input type="search" placeholder="O que você procura?" name="produto" id="produto" required>
+                <input type="text" placeholder="O que você procura?" name="produto" id="produto" required>
                 <button type="submit" class="btn btn-default botao_lupa">
                     <img src="./assets/imagens/search.png" alt="imagem de lupe de pesquisa">
                 </button>

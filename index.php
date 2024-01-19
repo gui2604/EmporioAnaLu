@@ -1,11 +1,11 @@
-<?php require("conectionDB.php");?>
+<?php require("conectionDB.php"); ?>
 <?php
 $query_rs_produto = "SELECT * FROM tb_produtos INNER JOIN tb_categorias ON tb_produtos.idCategoria = tb_categorias.idCategoria WHERE tb_produtos.ativo = 1 AND tb_produtos.home = 1 ORDER BY tb_produtos.idProduto DESC";
-$rs_produto = mysqli_query( $conn_bd_emporio, $query_rs_produto )or die( mysqli_error( $conn_bd_emporio ) );
-$totalRow_rs_produto = mysqli_num_rows( $rs_produto );
-$row_rs_produto = mysqli_fetch_assoc( $rs_produto );
+$rs_produto = mysqli_query($conn_bd_emporio, $query_rs_produto) or die(mysqli_error($conn_bd_emporio));
+$totalRow_rs_produto = mysqli_num_rows($rs_produto);
+$row_rs_produto = mysqli_fetch_assoc($rs_produto);
 ?>
-asdfujsdnfujsdnfud
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -19,48 +19,38 @@ asdfujsdnfujsdnfud
 </head>
 
 <body>
-    <?php include("header.php"); ?> 
+    <?php include("header.php"); ?>
 
-    <main class="container-fluid">
+    <main class="container-fluid" style="text-align:center;">
         <!-- Start wowslider BODY section -->
-        <section>
-            <div id="wowslider-container1">
-                <div class="ws_images slideshow_imagens">
-                    <ul>
-                        <li class="slideshow_item"><img src="./assets/galeria/data1/images/vinho.jpg"
-                                style="border-radius:27px;" alt="" title="" id="wows1_0"></li>
-                        <li class="slideshow_item"><img src="./assets/galeria/data1/images/goiabada_lata.png"
-                                style="border-radius:27px;" alt="" title="" id="wows1_1"></li>
-                        <li class="slideshow_item"><img src="./assets/galeria/data1/images/queijo_napolitano.png"
-                                style="border-radius:27px;" alt="" title="" id="wows1_2"></li>
-                        <li class="slideshow_item"><img src="./assets/galeria/data1/images/queijoParmesao_450x600.jpeg"
-                                style="border-radius:27px;" alt="" title="" id="wows1_3"></li>
-                        <li class="slideshow_item"><img src="./assets/galeria/data1/images/cocadaCremosa_450x600.jpg"
-                                style="border-radius:27px;" alt="" title="" id="wows1_4"></li>
-                        <li class="slideshow_item"><img src="./assets/galeria/data1/images/meiaCura_450x600.jpeg"
-                                style="border-radius:27px;" alt="" title="" id="wows1_5"></li>
-                    </ul>
+        <section id="carouselExample" class="carousel" >
+            <div class="carousel-inner container-fluid ">
+                <div class="carousel-item active">
+                    <img src="./assets/imagens/bananada.jpg" class="" alt="..." style="max-width:100%;">
+                    <img src="./assets/imagens/cocadaCremosa_450x600.jpg" class="" alt="..." style="max-width:100%;">
+                    <img src="./assets/imagens/queijo_napolitano.png" class="" alt="..." style="max-width:100%;">
                 </div>
-                <div class="ws_bullets">
-                    <div>
-                        <a href="#" title=""><span><img src="./assets/galeria/data1/images/vinho.jpg" alt=""></span></a>
-                        <a href="#" title=""><span><img src="./assets/galeria/data1/images/goiabada_lata.png"
-                                    alt=""></span></a>
-                        <a href="#" title=""><span><img src="./assets/galeria/data1/images/bananada.jpg"
-                                    alt=""></span></a>
-                        <a href="#" title=""><span><img src="./assets/galeria/data1/images/queijoParmesao_450x600.jpeg"
-                                    alt=""></span></a>
-                        <a href="#" title=""><span><img src="./assets/galeria/data1/images/cocadaCremosa_450x600.jpg"
-                                    alt=""></span></a>
-                        <a href="#" title=""><span><img src="./assets/galeria/data1/images/meiaCura_450x600.jpeg"
-                                    alt=""></span></a>
-                    </div>
+
+                <div class="carousel-item">
+                    <img src="./assets/imagens/queijoParmesao_450x600.jpeg" class="" alt="..." style="max-width:100%;">
+                    <img src="./assets/imagens/goiabada_lata.png" class="" alt="..." style="max-width:100%;">
+                    <img src="./assets/imagens/qzeroLactose_450x600.jpeg" class="" alt="..." style="max-width:100%;">
                 </div>
-                <div class="ws_script">
-                    <a href="#"></a>
+
+                <div class="carousel-item">
+                    <img src="./assets/imagens/meiaCura_450x600.jpeg" class="" alt="..." style="max-width:100%;">
+                    <img src="./assets/imagens/vinho.jpg" class="" alt="..." style="max-width:100%;">
+                    <img src="./assets/imagens/goiabada_bloco.jpg" class="" alt="..." style="max-width:100%;">
                 </div>
-                <div class="ws_shadow"></div>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </section>
         <!-- End wowslider BODY section -->
 
