@@ -6,6 +6,8 @@
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
     <script src="./assets/lightbox2/dist/js/lightbox-plus-jquery.min.js"></script>
+    <script src="galeria/engine1/jquery.js"></script>
     <script src="galeria/engine1/wowslider.js"></script>
     <script src="galeria/engine1/script.js"></script>
     <script src="./assets/js/carrossel.js"></script>
+    <script src="fontawesome642/js/all.js"></script>

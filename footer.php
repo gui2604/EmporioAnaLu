@@ -4,7 +4,7 @@
             <p>Avenida das Macieiras, nº 357</p>
             <p>Caieiras - SP</p>
             <!-- Link para o Google Maps -->
-            <a href="https://www.google.com/maps/search/Av.+Paulista,+São+Paulo,+Brazil" target="_blank"><img src="./assets/imagens/maps.png" class="maps" alt=""></a>
+            <a href="https://www.google.com/maps/search/Av.+das+Macieiras+357,+São+Paulo,+Brazil" target="_blank"><img src="./assets/imagens/maps.png" class="maps" alt=""></a>
         </section>
         <a href="#" class="col col-md-4"><img src="./assets/imagens/logo.png" alt="logo1 do Mini Empório AnaLu"></a>
         <section class="col col-md-4 texto_footer">
