@@ -20,14 +20,11 @@ $row_rs_produto = mysqli_fetch_assoc($rs_produto);
 
 <body>
     <?php include("header.php"); ?>
-
     <main class="container-fluid" style="text-align:center;">
         <?php include("galeria.php"); ?>
         <?php include("lowMain.php"); ?>
     </main>
-
     <?php include("footer.php"); ?>
-
     <?php include("scripts.php"); ?>
 </body>
 
