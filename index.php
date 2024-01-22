@@ -56,9 +56,7 @@ $row_rs_produto = mysqli_fetch_assoc($rs_produto);
                                     alt=""></span></a>
                     </div>
                 </div>
-                <div class="ws_script">
-                    <a href="#"></a>
-                </div>
+                <div class="ws_script"><a href="#"></a></div>
                 <div class="ws_shadow"></div>
             </div>
         </section>

@@ -1,0 +1,25 @@
+.imagem-responsiva {
+    max-width: 100%;
+    height: auto;
+}
+ 
+/* Oculta imagens para tela pequena */
+@media screen and (max-width: 599px) {
+    .imagem-para-tela-media,
+    .imagem-para-tela-grande {
+        display: none;
+    }
+}
+ 
+/* Adapte as imagens para diferentes tamanhos de tela */
+@media screen and (min-width: 600px) {
+    .imagem-para-tela-pequena {
+        width: 100%;
+    }
+}
+ 
+@media screen and (min-width: 768px) {
+    .imagem-para-tela-pequena {
+        width: 50%;
+    }
+}
