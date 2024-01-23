@@ -23,7 +23,7 @@
     <section>
         <div class="row">
             <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12">
-                <h2 class="titulo_produto"><?php echo($row_rs_produto["nome"]) ?> </h2>
+                <h2 class="titulo_produto" style="color:#F27457;"><?php echo($row_rs_produto["nome"]) ?> </h2>
                 <p class="descricao_produto">Descrição: <?php echo($row_rs_produto["descricao"]) ?></p>
                 <p class="preco_produto">Preço: R$<?php echo($row_rs_produto["preco"]) ?></p>
             </div>
@@ -36,7 +36,7 @@
         <div class="row">
             <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12"> <a href="./assets/imagens/<?php echo($row_rs_produto["imagem"]) ?>" title ="<?php echo($row_rs_produto["nome"]) ?>" data-lightbox="example-1"> <img src="assets/imagens/<?php echo($row_rs_produto["imagemThumb"]) ?>" alt="<?php echo($row_rs_produto["nome"]) ?>" title="<?php echo($row_rs_produto["nome"]) ?>" class="img-fluid"></a></div>
             <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12">
-                <h2 class="titulo_produto"><?php echo($row_rs_produto["nome"]) ?> </h2>
+                <h2 class="titulo_produto" style="color:#F27457;"><?php echo($row_rs_produto["nome"]) ?> </h2>
                 <p class="descricao_produto">Descrição: <?php echo($row_rs_produto["descricao"]) ?></p>
                 <p class="preco_produto">Preço: R$<?php echo($row_rs_produto["preco"]) ?></p>
             </div>
