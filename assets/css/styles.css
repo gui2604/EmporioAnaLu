@@ -14,8 +14,8 @@ html {
 
 .texto-reset{
     list-style: none;
-    color: #fff;
     text-decoration: none;
+    color: #fff;
 }
 
 body {
@@ -23,11 +23,9 @@ body {
 }
 
 header nav{
-    justify-content: space-around;
+    justify-content: space-evenly;
     background-color: #261B14;
-    border-radius: 2.7rem;
     text-wrap: nowrap;
-    /* margin: 2.7rem; */
 }
 
 header nav li a{
@@ -73,20 +71,13 @@ header section {
     cursor: pointer;
   }
 
-
   .search-bar button:hover{
     background-color: #BF9D8A;
     border: none;
   }
 
-.slideshow_imagens{
-    margin: 3%;
-}
-
-.slideshow_item{
-    display: flex;
-    justify-content: center;
-    gap: 3%;
+.detalhes button:hover{
+    color:#BF9F8A;
 }
 
 .wpp:hover{
@@ -101,7 +92,7 @@ header section {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-height: 400px;
+    min-height: 300px;
 }
 
 footer {
