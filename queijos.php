@@ -13,8 +13,8 @@ $row_rs_produto = mysqli_fetch_assoc( $rs_produto );
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Queijos do Mini Empório AnaLu</title>
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta name="description" content="Queijos tipo Napolitano ,Palito ,Light ,Parmesão ,Zero Lactose">
+    <meta name="keywords" content="Queijos, Requeijao">
     <?php include("head_comon.php"); ?>
 </head>
 

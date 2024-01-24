@@ -13,8 +13,8 @@ $row_rs_produto = mysqli_fetch_assoc( $rs_produto );
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Doces do Mini Empório AnaLu</title>
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta name="description" content="Diversos Tipos De Doce Como Doce de leite, Goiabada, Bananada, Cocada e Muito Mais">
+    <meta name="keywords" content="Doces, Goiabada, Doce De Leite, Bananada, Cocada Cremosa">
     <?php include("head_comon.php"); ?>
 </head>
 
