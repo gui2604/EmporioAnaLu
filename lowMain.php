@@ -15,7 +15,7 @@
                         class="img-fluid" style="border-radius:2rem;max-height:300px;min-height:300px;"></a>
             </div>
             <!-- texto e botão do produto -->
-            <div class="" style="">
+            <div class="">
                 <h2 class="titulo_produto" style="color:#F27457;">
                     <?php echo ($row_rs_produto["nome"]) ?>
                 </h2>

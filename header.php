@@ -16,7 +16,7 @@
         </div>
     </section>
     <!-- Barra de Navegação -->
-    <nav class="d-flex" style="">
+    <nav class="d-flex">
         <li>
             <a href="queijos.php" class="texto-reset">
                 <p class="texto-reset">Queijos</p>
