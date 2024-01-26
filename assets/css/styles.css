@@ -54,6 +54,10 @@ header section {
     text-wrap: nowrap;
     align-items: center;
     margin-left: 1rem;
+    background-color: #261B14;
+    box-sizing: border-box;
+    padding:.6%;
+    border-radius:2rem;
 }
 
 .search-bar{
@@ -134,7 +138,6 @@ input{
 .contato{
     font-size: 20px;
 }
-
 
 
 

@@ -1,21 +1,29 @@
-<?php require("conectionDB.php");?>
+<?php require("conectionDB.php"); ?>
 <?php
-$query_rs_produto = "SELECT * FROM tb_produtos INNER JOIN tb_areas ON tb_produtos.idArea = tb_areas.idArea WHERE tb_produtos.ativo = 1 AND tb_produtos.idCurso = $idProduto;";
-$query_visitas = "SELECT visualizacao FROM tb_produtos WHERE tb_produtos.ativo = 1 AND tb_produtos.idProduto = $idProduto;";
-$query_incremento_visitas = "UPDATE tb_produtos SET visualizacao = visualizacao + 1 WHERE idProduto = $idProduto;";
 
-$rs_produto = mysqli_query( $conn_bd_emporio, $query_rs_produto )or die( mysqli_error( $conn_bd_emporio ) );
-$rs_visitas = mysqli_query( $conn_bd_emporio, $query_rs_visitas )or die( mysqli_error( $conn_bd_emporio ) );
-$rs_incremento = mysqli_query( $conn_bd_emporio, $query_rs_incremento )or die( mysqli_error( $conn_bd_emporio ) );
-$totalRow_rs_produto = mysqli_num_rows( $rs_produto );
-$row_rs_produto = mysqli_fetch_assoc( $rs_produto );
+if (isset($_GET['idProduto'])) {
+    $idProduto = $_GET['idProduto'];
+}
+;
 
-if(isset($_GET['idProduto'])){
-    //criando a variável para consultar por ID e usar como passagem de parâmetro no link de detalhes
-    $idCurso = $_GET['idProduto'];
-};
+$query_rs_produto = "SELECT * FROM tb_produtos WHERE tb_produtos.ativo = 1 AND tb_produtos.idProduto = $idProduto;";
+$query_rs_maisprocurados = "SELECT * FROM tb_produtos WHERE tb_produtos.ativo = 1 AND tb_produtos.home = 1 LIMIT 6;";
+
+$rs_produto = mysqli_query($conn_bd_emporio, $query_rs_produto) or die(mysqli_error($conn_bd_emporio));
+$rs_maisprocurados = mysqli_query($conn_bd_emporio, $query_rs_maisprocurados) or die(mysqli_error($conn_bd_emporio));
+
+$totalRow_rs_produto = mysqli_num_rows($rs_produto);
+
+$row_rs_produto = mysqli_fetch_assoc($rs_produto);
+$row_rs_maisprocurados = mysqli_fetch_assoc($rs_maisprocurados);
+
+$nome_do_produto = $row_rs_produto["nome"];
+$preco_do_produto = $row_rs_produto["preco"];
+$mensagem_whatsapp = "Olá, estou interessado no produto: $nome_do_produto. Preço: $preco_do_produto";
+$mensagem_whatsapp_encoded = urlencode($mensagem_whatsapp);
+$numero_vendedor = '5511947242147';
+$link_whatsapp = "https://api.whatsapp.com/send?phone=$numero_vendedor&text=$mensagem_whatsapp_encoded";
 ?>
-
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -23,24 +31,55 @@ if(isset($_GET['idProduto'])){
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Queijos do Mini Empório AnaLu</title>
+    <title>Detalhes do produto
+        <?php echo $row_rs_produto["nome"]; ?>
+    </title>
     <meta name="description" content="">
     <meta name="keywords" content="">
     <?php include("head_comon.php"); ?>
 </head>
 
-<body>
-    <?php include("header.php"); ?> 
+<body style="text-align:center;">
+    <?php include("header.php"); ?>
 
     <main class="container-fluid">
-        <?php include("conteudo.php"); ?>
+        <br>
+        <div class="row justify-content-center">
+            <div class="col-lg-6 product-container">
+                <h2 class="product-title" style="color:#F27457;font-size:3.5rem;">
+                    <?php echo $row_rs_produto["nome"]; ?>
+                </h2>
+                <div class="product-image"><a href="./assets/imagens/<?php echo $row_rs_produto["imagem"]; ?>"
+                        title="<?php echo $row_rs_produto["nome"]; ?>" data-lightbox="example-1">
+                        <img src="./assets/imagens/<?php echo $row_rs_produto["imagem"]; ?>"
+                            alt="<?php echo $row_rs_produto["nome"]; ?>"
+                            style="max-width:1200px;max-height:500px;border-radius:2rem;"></a>
+                </div>
+                <br>
+                <p class="descricao_produto">
+                    <?php echo $row_rs_produto["descricao"]; ?>
+                </p>
+                <div class="preco_produto">Preço: R$
+                    <?php echo $row_rs_produto["preco"]; ?>
+                </div>
+                <a href="<?php echo $link_whatsapp ?>" title="" class="botoes"><button type="button" class="texto-reset"
+                        style="font-size:2rem;background-color:#261B14;border-radius:1rem;width:225px;">Comprar</button></a>
+            </div>
+        </div>
+        <br>
 
         <?php include("lowMain.php"); ?>
+
     </main>
 
     <?php include("footer.php"); ?>
 
     <?php include("scripts.php"); ?>
+    <?php
+    mysqli_free_result($rs_produto);
+    mysqli_free_result($rs_maisprocurados);
+    mysqli_close($conn_bd_emporio);
+    ?>
 </body>
 
 </html>

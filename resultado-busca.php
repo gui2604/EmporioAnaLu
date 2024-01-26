@@ -6,9 +6,11 @@ if (isset($_GET["produto"])){
 }
 
 $query_rs_produto = "SELECT * FROM tb_produtos WHERE tb_produtos.ativo = 1 AND tb_produtos.nome LIKE '%$produto%' OR tb_produtos.descricao LIKE '%$produto%'";
+$query_rs_maisprocurados = "SELECT * FROM tb_produtos WHERE tb_produtos.ativo = 1 AND tb_produtos.home = 1 LIMIT 6;";
 $rs_produto = mysqli_query( $conn_bd_emporio, $query_rs_produto )or die( mysqli_error( $conn_bd_emporio ) );
-$totalRow_rs_produto = mysqli_num_rows( $rs_produto );
+$rs_maisprocurados = mysqli_query($conn_bd_emporio, $query_rs_maisprocurados) or die(mysqli_error($conn_bd_emporio));
 $row_rs_produto = mysqli_fetch_assoc( $rs_produto );
+$row_rs_maisprocurados = mysqli_fetch_assoc($rs_maisprocurados);
 ?>
 
 <!DOCTYPE html>
@@ -26,7 +28,7 @@ $row_rs_produto = mysqli_fetch_assoc( $rs_produto );
 <body>
     <?php include("header.php"); ?> 
 
-    <main class="container-fluid">
+    <main class="container-fluid" style="text-align:center;">
         <?php include("conteudo.php"); ?>
 
         <?php include("lowMain.php"); ?>
@@ -35,6 +37,11 @@ $row_rs_produto = mysqli_fetch_assoc( $rs_produto );
     <?php include("footer.php"); ?>
 
     <?php include("scripts.php"); ?>
+    <?php
+    mysqli_free_result($rs_produtos);
+    mysqli_free_result($rs_maisprocurados);
+    mysqli_close($conn_bd_emporio);
+    ?>
 </body>
 
 </html>
