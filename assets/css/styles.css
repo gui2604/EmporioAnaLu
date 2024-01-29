@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
 * {
     padding: 0;
-    box-sizing: border-box;
     margin: 0;
+    box-sizing: border-box;
     list-style: none;
     font-family: 'Irish Grover', cursive;
     font-size: 3.2rem;
@@ -20,6 +20,8 @@ html {
 
 body {
     background-color: #593A2E;
+    /* margin: 0; */
+    /* padding: 0; */
 }
 
 header nav{
@@ -115,13 +117,6 @@ footer {
     text-wrap: nowrap;
     align-items: center;
 }
-
-.texto_footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 
 /* Alterando Barra De Pesquisa  */
 input[type="text"],
