@@ -69,7 +69,7 @@ if (isset($_POST["idCategoria"]) && isset($_POST["nome"]) && isset($_POST["descr
         Descrição do Produto:<br><textarea cols="100" rows="10" name="descricao" id="descricao"></textarea><br><br>
         Lançamento: <input type="hidden" name="lancamento" value="0"><input type="checkbox" name="lancamento" value="1" checked><br><br>
         Promoção: <input type="hidden" name="promocao" value="0"><input type="checkbox" name="lancamento" value="1" checked><br><br>
-        Preço: <input type="number" name="preco" id="preco"><br><br>
+        Preço: <input type="number" name="preco" id="preco" required><br><br>
         Imagem Grande: <input type="file" name="imagem" id="imagem"><br><br>
         Imagem Pequena (thumb): <input type="file" name="imagemThumb" id="imagemThumb"><br><br>
         Home: <input type="hidden" name="home" value="0"><input type="checkbox" name="home" value="1" checked><br><br>
