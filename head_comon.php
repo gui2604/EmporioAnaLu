@@ -8,4 +8,5 @@
 <link rel="stylesheet" href="./assets/css/medias.css">
 <link rel="stylesheet" href="./assets/css/content.css">
 <link rel="stylesheet" href="./assets/css/carrossel.css">
+<link rel="manifest" href="./pwa/manifest.json">
 <script type="text/javascript" src="engine1/jquery.js"></script>

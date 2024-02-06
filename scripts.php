@@ -8,3 +8,4 @@
     <script src="./assets/lightbox2/dist/js/lightbox-plus-jquery.min.js"></script>
     <script src="./assets/js/carrossel.js"></script>
     <script src="fontawesome642/js/all.js"></script>
+    <script src="./pwa/myscripts.js"></script>
