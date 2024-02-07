@@ -8,17 +8,17 @@
 }
 
 .titulo_produto {
-    color: #fff;
+    color: #F0F0F2;
     font-size: 3rem;
 }
 
 .descricao_produto {
-    color: white;
+    color: #F0F0F2;
     font-size: 2rem;
 }
 
 .preco_produto {
-    color: white;
+    color: #BF9D8A;
 }
 
 .product-title {
@@ -45,7 +45,7 @@
 
 .buy-button {
     background-color: #28a745;
-    color: #fff;
+    color: #F0F0F2;
     padding: 10px 20px;
     font-size: 18px;
     border: none;
