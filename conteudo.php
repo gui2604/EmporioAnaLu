@@ -10,7 +10,7 @@
             } else if ($current_page == 'doces.php') {
                 echo 'Doces';
             } else {
-                echo 'Produtos em Oferta';
+                echo 'Variedades';
             }
             ?>
 

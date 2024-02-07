@@ -8,9 +8,9 @@
         </section>
         <div class="flex-column col-12 col-sm-12 col-md-4" style="text-align:center;">
             <a href="index.php"><img src="./assets/imagens/logo.png" alt="logo1 do Mini Empório AnaLu" class="logo_responsivo"></a>
-            <p class="direitos">Todos os direitos reservados, as fotos utilizadas são meramente ilustrativas para exibir os produtos do Mini Empório AnaLu</p>
+            <p class="direitos">Todos os direitos reservados. As fotos utilizadas são meramente ilustrativas para exibição dos produtos do Mini Empório AnaLu.</p>
         </div>
         <section class="col-12 col-sm-12 col-md-4 d-flex justify-content-center">
-            <p class="contato">Contato: (11)94724-2147</p>
+            <p class="contato">Contato: (11) 94724-2147</p>
         </section>
     </footer>
