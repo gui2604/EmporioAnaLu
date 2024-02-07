@@ -19,7 +19,7 @@ $row_rs_maisprocurados = mysqli_fetch_assoc($rs_maisprocurados);
 
 <body>
     <?php include("header.php"); ?>
-    <main class="container-fluid" style="text-align:center;">
+    <main class="container-fluid" style="text-align:center;margin:0;padding:0;width:100%;">
         <?php include("galeria.php"); ?>
         <?php include("lowMain.php"); ?>
     </main>

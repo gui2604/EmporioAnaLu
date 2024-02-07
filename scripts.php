@@ -1,4 +1,3 @@
-    <script src="./assets/js/slideshow.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
@@ -6,6 +5,5 @@
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
     <script src="./assets/lightbox2/dist/js/lightbox-plus-jquery.min.js"></script>
-    <script src="./assets/js/carrossel.js"></script>
     <script src="fontawesome642/js/all.js"></script>
     <script src="./pwa/myscripts.js"></script>

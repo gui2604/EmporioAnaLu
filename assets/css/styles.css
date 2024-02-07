@@ -6,6 +6,7 @@
     list-style: none;
     font-family: 'Irish Grover', cursive;
     font-size: 3.2rem;
+    max-width: 100%;
 }
 
 html {
@@ -20,8 +21,7 @@ html {
 
 body {
     background-color: #593A2E;
-    /* margin: 0; */
-    /* padding: 0; */
+   
 }
 
 header nav{
@@ -58,7 +58,7 @@ header section {
     margin-left: 1rem;
     background-color: #261B14;
     box-sizing: border-box;
-    padding:.6%;
+    padding:1%;
     border-radius:2rem;
 }
 
@@ -107,7 +107,6 @@ footer {
     justify-content: space-around;
     align-items: center;
     background-color: #261B14;
-    border-radius: 2.7rem;
     margin: 2.7rem;
 }
 
@@ -131,7 +130,11 @@ input{
 }
 
 .contato{
-    font-size: 20px;
+    font-size: 3rem;
+}
+
+.direitos {
+    font-size: 1.5rem;
 }
 
 
