@@ -11,8 +11,8 @@
         </form>
         <!-- Texto do Header -->
         <div class="header-text">
-            <p>Horário de Atendimento</p>
-            <p>10h às 18h</p>
+            <p>Horário de Atendimento:</p>
+            <p>10h às 20h</p>
         </div>
     </section>
     <!-- Barra de Navegação -->
