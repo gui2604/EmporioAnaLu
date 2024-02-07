@@ -26,4 +26,25 @@
         gap: 1rem;
     }
     
+    .logo_responsivo {
+        width:12rem;
+    }
+
+    .contato {
+        font-size: 1.5rem;
+    }
+
+    .local {
+        margin-bottom: 70px;
+    }
+
+    .header-text {
+        margin:30px 0;
+        padding: 10px;
+    }
+
+    .search-bar {
+        margin: 20px 0 0 0;
+    }
+
 }
