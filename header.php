@@ -1,7 +1,7 @@
-<header class="container-fluid" style="margin:0">
-    <section class="topo" style="max-height:200px;margin:0;">
+<header class="container-fluid" style="margin:0;">
+    <section class="topo container-fluid" style="margin:0;">
         <!-- logo1 MiniEmpório AnaLu -->
-        <a href="index.php"><img src="./assets/imagens/logo.png" alt="logo mini empório AnaLu"></a>
+        <a href="index.php"><img src="./assets/imagens/logo.png" class="logo_header" alt="logo mini empório AnaLu"></a>
         <!-- BARRA DE PESQUISA -->
         <form class="search-bar" action="resultado-busca.php" method="get" id="form_busca">
             <input type="text" placeholder="O que você procura?" name="produto" id="produto" required>
@@ -16,7 +16,7 @@
         </div>
     </section>
     <!-- Barra de Navegação -->
-    <nav class="d-flex">
+    <nav class="d-flex" style="margin-top:auto;border:2px solid blue;">
         <li>
             <a href="queijos.php" class="texto-reset">
                 <p class="texto-reset">Queijos</p>
