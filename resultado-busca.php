@@ -11,6 +11,7 @@ $rs_produto = mysqli_query( $conn_bd_emporio, $query_rs_produto )or die( mysqli_
 $rs_maisprocurados = mysqli_query($conn_bd_emporio, $query_rs_maisprocurados) or die(mysqli_error($conn_bd_emporio));
 $row_rs_produto = mysqli_fetch_assoc( $rs_produto );
 $row_rs_maisprocurados = mysqli_fetch_assoc($rs_maisprocurados);
+$totalRow_rs_produto = mysqli_num_rows($rs_produto);
 ?>
 
 <!DOCTYPE html>
@@ -29,7 +30,13 @@ $row_rs_maisprocurados = mysqli_fetch_assoc($rs_maisprocurados);
     <?php include("header.php"); ?> 
 
     <main class="container-fluid" style="text-align:center;">
-        <?php include("conteudo.php"); ?>
+        <?php
+        if($totalRow_rs_produto > 0){
+         include("conteudo.php");
+        }else{
+            echo "<div style='color:white;height:500px;display:flex;justify-content:center;align-items:center;'>Nenhum produto encontrado.</div>";
+        }
+         ?>
 
         <?php include("lowMain.php"); ?>
     </main>
@@ -38,8 +45,8 @@ $row_rs_maisprocurados = mysqli_fetch_assoc($rs_maisprocurados);
 
     <?php include("scripts.php"); ?>
     <?php
-    mysqli_free_result($rs_produtos);
-    mysqli_free_result($rs_maisprocurados);
+    //mysqli_free_result($rs_produtos);
+    //mysqli_free_result($rs_maisprocurados);
     mysqli_close($conn_bd_emporio);
     ?>
 </body>
