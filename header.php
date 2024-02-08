@@ -19,25 +19,25 @@
     <nav class="d-flex">
         <li>
             <a href="queijos.php" class="texto-reset">
-                <p class="texto-reset">Queijos</p>
+                <p class="texto-reset-titulo">Queijos</p>
                 <img src="./assets/imagens/cheese.png" alt="ícone de queijo">
             </a>
         </li>
         <li>
             <a href="paes.php" class="texto-reset">
-                <p class="texto-reset">Pães de Queijo</p>
+                <p class="texto-reset-titulo">Pães de Queijo</p>
                 <img src="./assets/imagens/bread.png" alt="ícone de pão">
             </a>
         </li>
         <li>
             <a href="doces.php" class="texto-reset">
-                <p>Doces</p>
+                <p class="texto-reset-titulo">Doces</p>
                 <img src="./assets/imagens/candy.png" alt="ícone de doce">
             </a>
         </li>
         <li>
             <a href="variedades.php" class="texto-reset">
-                <p>Variedades</p>
+                <p class="texto-reset-titulo">Variedades</p>
                 <img src="./assets/imagens/food.png" alt="ícone de variedades">
             </a>
         </li>

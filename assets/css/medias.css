@@ -10,8 +10,10 @@
     }
 
     .botao_lupa img {
-        width: 4rem;
+        width: 5rem;
         height: auto;
+        min-height: 3rem;
+        min-width: 3rem;
     }
 }
 
@@ -45,6 +47,7 @@
 
     .search-bar {
         margin: 20px 0 0 0;
+        min-width: 20rem;
     }
 
 }

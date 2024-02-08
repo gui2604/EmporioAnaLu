@@ -19,9 +19,13 @@ html {
     color: #F0F0F2;
 }
 
+.texto-reset-titulo {
+    font-size: 3.2rem;
+}
+
 body {
     background-color: #593A2E;
-   
+    min-width: 48rem;
 }
 
 header nav{
@@ -35,7 +39,7 @@ header nav li a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2.7rem;
+    padding: 1.45rem;
 }
 
 header nav li:hover{
@@ -66,10 +70,10 @@ header section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px;
-    width: 50%;
-    height: 40%;
+    width: 35%;
+    padding-left: 1%;
     background-color: #F0F0F2;
+    font-size: 2.5rem;
   }
   
   .search-bar button {
@@ -81,6 +85,11 @@ header section {
     background-color: #BF9D8A;
     border: none;
   }
+
+.botao_lupa {
+    height: 6rem; 
+    width: 6rem;
+}
 
 .detalhes button:hover{
     color:#BF9F8A;
@@ -96,7 +105,7 @@ header section {
 
 .logos {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     min-height: 300px;
 }
