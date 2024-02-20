@@ -1,11 +1,7 @@
 <?php require("conectionDB.php");
 
-$query_rs_categorias = "SELECT * FROM tb_categorias ORDER BY idCategoria ASC;";
-$rs_categorias = mysqli_query($conn_bd_emporio, $query_rs_categorias) or die(mysqli_error($conn_bd_emporio));
-$row_rs_categorias = mysqli_fetch_assoc($rs_categorias);
-
 //Validando a existência dos dados
-if (isset($_POST["idCategoria"]) && isset($_POST["nome"]) && isset($_POST["descricao"]) && isset($_POST["lancamento"]) && isset($_POST["promocao"]) && isset($_POST["preco"]) && isset($_FILES["imagem"]) && isset($_FILES["imagemThumb"]) && isset($_POST["home"]) && isset($_POST["ativo"]) && isset($_POST["visualizacao"])) {
+if (isset($_POST["submit"])) {
     //Variável super global para capturar do formulário
     $idCategoria = $_POST["idCategoria"];
     $nome = $_POST["nome"];
@@ -13,32 +9,54 @@ if (isset($_POST["idCategoria"]) && isset($_POST["nome"]) && isset($_POST["descr
     $lancamento = $_POST["lancamento"];
     $promocao = $_POST["promocao"];
     $preco = $_POST["preco"];
-    $imagem = $_FILES["imagem"]["name"];
-    $imagemThumb = $_FILES["imagemThumb"]["name"];
     $home = $_POST["home"];
     $ativo = $_POST["ativo"];
-    $visualizacao = $_POST["visualizacao"];
 
-    set_time_limit(0);
+    //imagens
     $diretorio = "./assets/imagens";
-    $imagemTemp = $_FILES["imagem"]["tmp_name"];
-    $imagemTempThumb = $_FILES["imagemThumb"]["tmp_name"];
+    set_time_limit(0);
+    $imagem = $_FILES["imagem"]["name"];
+    if($imagem != ""){
+        unlink($diretorio.'/'.$_REQUEST["imagemAn"]);
+        $imagemTemp = $_FILES["imagem"]["tmp_name"];
+        move_uploaded_file($imagemTemp, "$diretorio/$imagem");
+    }else{
+        $imagem = $_REQUEST["imagemAn"];
+    };
+    
+    $imagemThumb = $_FILES["imagemThumb"]["name"];
 
-    move_uploaded_file($imagemTemp, "$diretorio/$imagem");
-    move_uploaded_file($imagemTempThumb, "$diretorio/$imagemThumb");
+    if($imagemThumb != ""){
+        unlink($diretorio.'/'.$_REQUEST["imagemThumbAn"]);
+        $imagemTempThumb = $_FILES["imagemThumb"]["tmp_name"];
+        move_uploaded_file($imagemTempThumb, "$diretorio/$imagemThumb");
+    }else{
+        $imagemThumb = $_REQUEST["imagemThumbAn"];
+    }; 
 
-    $inserir = "INSERT INTO tb_produtos (idProduto, dataCad, nome, descricao, lancamento, promocao, preco, imagem, imagemThumb, ativo, home, visualizacao, idCategoria) VALUES (NULL, CURRENT_TIMESTAMP(),'$nome','$descricao','$lancamento','$promocao','$preco','$imagem','$imagemThumb','$ativo','$home','$visualizacao','$idCategoria');";
-    $resultado = mysqli_query($conn_bd_emporio, $inserir) or die(mysqli_error($conn_bd_emporio));
+    $query_editar = "UPDATE tb_produtos SET idCategoria = '$idCategoria', nome = '$nome', descricao = '$descricao', lancamento = '$lancamento', promocao = '$promocao', preco = '$preco', imagem = '$imagem', imagemThumb = '$imagemThumb', home = '$home', ativo = '$ativo', visualizacao = '' WHERE idProduto = $idProduto;"; 
+    $rs_editar = mysqli_query($conn_bd_emporio, $query_editar) or die(mysqli_error($conn_bd_emporio));
 
-    if ($resultado == true) {
-        echo '<script>alert("Dados inseridos com sucesso!");
+    if($rs_editar == false){
+        die("ERRO: ".mysqli_error($conn_bd_emporio));
+    }else{
+        echo '<script>alert("Dados editados com sucesso!");
         window.location.href="adm-lista.php";</script>';
-    } else {
-        echo "Falha ao inserir dados!";
-    }
-    ;
-}
-;
+    };
+};
+
+if(isset($_GET["idProduto"])){
+    $id = $_GET["idProduto"];
+};
+
+$query_rs_produtos = "SELECT * FROM tb_produtos INNER JOIN tb_categorias ON tb_produtos.idProduto = tb_categorias.idCategoria WHERE tb_produtos.idProduto = $id;";
+$rs_produtos = mysqli_query($conn_bd_emporio, $query_rs_produtos) or die(mysqli_error($conn_bd_emporio));
+$row_rs_produtos = mysqli_fetch_assoc($rs_produtos);
+$totalRow_rs_produtos = mysqli_num_rows($rs_produtos);
+
+$query_rs_categorias = "SELECT * FROM tb_categorias ORDER BY idCategoria ASC;";
+$rs_categorias = mysqli_query($conn_bd_emporio, $query_rs_categorias) or die(mysqli_error($conn_bd_emporio));
+$row_rs_categorias = mysqli_fetch_assoc($rs_categorias);
 ?>
 
 <!DOCTYPE html>
@@ -52,39 +70,42 @@ if (isset($_POST["idCategoria"]) && isset($_POST["nome"]) && isset($_POST["descr
 
 <body>
 
-    <form method="post" enctype="multipart/form-data" id="form_inserir">
+    <form action="<?=$_SERVER['PHP_SELF']; ?>" method="post" enctype="multipart/form-data" id="form_inserir">
         <!-- o atributo "name" e "id" precisam ser iguais ao nome do campo que vem do banco de dados -->
-        <input type="hidden" name="idProduto" id="idProduto">
-        <input type="hidden" name="dataCad" id="dataCad">
+        Id do Produto: <?php echo $row_rs_curso["idProduto"]; ?><br><br>
+        <input type="hidden" name="idProduto" id="idProduto" value="<?php echo $row_rs_curso["idProduto"]; ?>">
+        <input type="hidden" name="dataCad" id="dataCad" value="<?php echo $row_rs_curso["dataCad"]; ?>">
         Categoria:
         <select name="idCategoria" id="idCategoria" required>
             <option></option>
             <?php do { ?>
-                <option value="<?php echo $row_rs_categorias["idCategoria"]; ?>">
+                <option value="<?php echo $row_rs_categorias["idCategoria"]; ?>" <?php if($row_rs_categorias["idCategorias"] === $row_rs_curso["idCategorias"]){echo "selected='selected'";}; ?>>
                     <?php echo $row_rs_categorias["categoria"]; ?>
                 </option>
             <?php } while ($row_rs_categorias = mysqli_fetch_assoc($rs_categorias)); ?>
         </select><br><br>
-        Nome do Produto: <input type="text" name="nome" id="nome" size="100" required><br><br>
-        Descrição do Produto:<br><textarea cols="100" rows="10" name="descricao" id="descricao"></textarea><br><br>
-        Lançamento: <input type="hidden" name="lancamento" value="0"><input type="checkbox" name="lancamento" value="1" checked><br><br>
-        Promoção: <input type="hidden" name="promocao" value="0"><input type="checkbox" name="lancamento" value="1" checked><br><br>
-        Preço: <input type="number" name="preco" id="preco" required><br><br>
-        Imagem Grande: <input type="file" name="imagem" id="imagem"><br><br>
-        Imagem Pequena (thumb): <input type="file" name="imagemThumb" id="imagemThumb"><br><br>
-        Home: <input type="hidden" name="home" value="0"><input type="checkbox" name="home" value="1" checked><br><br>
+        Nome do Produto: <input type="text" name="nome" id="nome" size="100" required value="<?php echo $row_rs_curso["nome"]; ?>"><br><br>
+        Descrição do Produto:<br><textarea cols="100" rows="10" name="descricao" id="descricao"><?php echo $row_rs_curso["descricao"]; ?>"</textarea><br><br>
+        Lançamento: <input type="hidden" name="lancamento" value="0"><input type="checkbox" name="lancamento" value="1" <?php if($row_rs_curso["lancamento"] == 1){echo 'checked="checked"';}?>><br><br>
+        Promoção: <input type="hidden" name="promocao" value="0"><input type="checkbox" name="lancamento" value="1" <?php if($row_rs_curso["promocao"] == 1){echo 'checked="checked"';}?>><br><br>
+        Preço: <input type="number" name="preco" id="preco" required value="<?php echo $row_rs_curso["preco"]; ?>"><br><br>
+        Imagem Grande:  <?php echo $row_rs_curso["imagem"]; ?><br><br>
+                       <img src="./assets/imagens/<?php echo $row_rs_curso['imagem']; ?>" width=100><br><br> 
+        <input type="hidden" name="imagemAn" id="imagemAn" value="<?php echo $row_rs_curso['imagem'] ?>">
+        <input type="file" name="imagemAn" id="imagemAn"><br><br>
+        Imagem Pequena (thumb): <?php echo $row_rs_curso["imagemThumb"]; ?><br><br>
+                                <img src="./assets/imagens/<?php echo $row_rs_curso['imagemThumb']; ?>" width=100><br><br> 
+        <input type="hidden" name="imagemThumbAn" id="imagemThumbAn" value="<?php echo $row_rs_curso['imagemThumb'] ?>">
+        <input type="file" name="imagemThumb" id="imagemThumb"><br><br>
+        Home: <input type="hidden" name="home" value="0"><input type="checkbox" name="home" value="1" <?php if($row_rs_curso["home"] == 1){echo 'checked="checked"';}?>><br><br>
         Ativo: <input type="hidden" name="ativo" value="0"><input type="checkbox" name="ativo" value="1"
-            checked><br><br>
+        <?php if($row_rs_curso["ativo"] == 1){echo 'checked="checked"';}?>><br><br>
         <input type="hidden" name="visualizacao" id="visualizacao" value="0">
 
         <input type="submit">
 
     </form>
 
-    <?php
-    mysqli_free_result($rs_categorias);
-    mysqli_close($conn_bd_emporio);
-    ?>
 </body>
 
 </html>
