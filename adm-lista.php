@@ -43,7 +43,7 @@ $row_rs_produto = mysqli_fetch_assoc($rs_produto);
                 <tr>
                     <!-- colunas -->
                     <td><a href="adm-inserir.php"><img src="./assets/imagens/inserir.png" width="20" height="20" alt=""></a></td>
-                    <td><a href="adm-editar.php"><img src="./assets/imagens/edit.gif" width="16" height="15" alt=""></a></td>
+                    <td><a href="adm-editar.php?idProduto=<?php echo $row_rs_produto['idProduto']; ?>"><img src="./assets/imagens/edit.gif" width="16" height="15" alt=""></a></td>
                     <td><a href="adm-excluir.php?idProduto=<?php echo $row_rs_produto['idProduto']; ?>" onclick="return confirm('Tem certeza que deseja excluir esse produto?')"><img
                                 src="./assets/imagens/delete.gif" width="16" height="15" alt=""></a></td>
                     <td>
