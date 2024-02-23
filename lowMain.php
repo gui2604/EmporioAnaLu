@@ -1,5 +1,5 @@
 <!-- Logo2 da loja e contato do whatsapp -->
-<section style="background-color:#261B14;color:#F0F0F2;min-height:124px;"
+<section style="background-color:#261B14;color:#F0F0F2;min-height:124px;margin:0;padding:0;width:100%;"
     class="d-flex justify-content-center align-items-center">
     <h2 style="text-align:center;font-size:1.2em;">Principais Produtos</h2>
 </section>
