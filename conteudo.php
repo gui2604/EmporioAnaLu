@@ -28,7 +28,7 @@
             $mensagem_whatsapp_encoded = urlencode($mensagem_whatsapp);
             $numero_vendedor = '5511947242147';
             $link_whatsapp = "https://api.whatsapp.com/send?phone=$numero_vendedor&text=$mensagem_whatsapp_encoded";
-            ?>
+    ?>
             <section>
                 <div class="row">
                     <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 d-flex flex-column justify-content-center">
@@ -41,28 +41,16 @@
                         <p class="preco_produto">Preço: R$
                             <?php echo $row_rs_produto["preco"]; ?>
                         </p>
-                        <a href="<?php echo $link_whatsapp; ?>" target="_blank" title="" class="botoes" style="margin-bottom:20px;"><button type="button"
-                                class="texto-reset"
-                                style="font-size:2rem;background-color:#261B14;border-radius:1rem;width:225px;">Comprar</button></a>
+                        <a href="<?php echo $link_whatsapp; ?>" target="_blank" title="" class="botoes" style="margin-bottom:20px;"><button type="button" class="texto-reset" style="font-size:2rem;background-color:#261B14;border-radius:1rem;width:225px;">Comprar</button></a>
                     </div>
-                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 d-flex flex-column justify-content-center"> <a
-                            href="./assets/imagens/<?php echo ($row_rs_produto["imagem"]) ?>"
-                            title="<?php echo $row_rs_produto["nome"]; ?>" data-lightbox="example-1"> <img
-                                src="assets/imagens/<?php echo $row_rs_produto["imagemThumb"]; ?>"
-                                alt="<?php echo $row_rs_produto["nome"]; ?>" title="<?php echo $row_rs_produto["nome"]; ?>"
-                                class="img-fluid" style="border-radius:2rem;margin-bottom:50px;"></a></div>
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 d-flex flex-column justify-content-center"> <a href="./assets/imagens/<?php echo $row_rs_produto["imagem"] ?>" title="<?php echo $row_rs_produto["nome"]; ?>" data-lightbox="example-1"> <img src="assets/imagens/<?php echo $row_rs_produto["imagemThumb"]; ?>" alt="<?php echo $row_rs_produto["nome"]; ?>" title="<?php echo $row_rs_produto["nome"]; ?>" class="img-fluid" style="border-radius:2rem;margin-bottom:50px;"></a></div>
                 </div>
             </section>
             <br>
         <?php } else { ?>
             <section>
                 <div class="row">
-                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 d-flex flex-column justify-content-center"> <a
-                            href="./assets/imagens/<?php echo ($row_rs_produto["imagem"]) ?>"
-                            title="<?php echo $row_rs_produto["nome"]; ?>" data-lightbox="example-1"> <img
-                                src="assets/imagens/<?php echo $row_rs_produto["imagemThumb"]; ?>"
-                                alt="<?php echo $row_rs_produto["nome"]; ?>" title="<?php echo $row_rs_produto["nome"]; ?>"
-                                class="img-fluid" style="border-radius:2rem;"></a></div>
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 d-flex flex-column justify-content-center"> <a href="./assets/imagens/<?php echo ($row_rs_produto["imagem"]) ?>" title="<?php echo $row_rs_produto["nome"]; ?>" data-lightbox="example-1"> <img src="assets/imagens/<?php echo $row_rs_produto["imagemThumb"]; ?>" alt="<?php echo $row_rs_produto["nome"]; ?>" title="<?php echo $row_rs_produto["nome"]; ?>" class="img-fluid" style="border-radius:2rem;"></a></div>
                     <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 d-flex flex-column justify-content-center">
                         <h2 class="titulo_produto" style="color:#F27457;">
                             <?php echo $row_rs_produto["nome"]; ?>
@@ -73,15 +61,13 @@
                         <p class="preco_produto">Preço: R$
                             <?php echo $row_rs_produto["preco"]; ?>
                         </p>
-                        <a href="<?php echo $link_whatsapp; ?>" target="_blank" title="" class="botoes" style="margin-bottom:50px;"><button type="button"
-                                class="texto-reset"
-                                style="font-size:2rem;background-color:#261B14;border-radius:1rem;width:225px;">Comprar</button></a>
+                        <a href="<?php echo $link_whatsapp; ?>" target="_blank" title="" class="botoes" style="margin-bottom:50px;"><button type="button" class="texto-reset" style="font-size:2rem;background-color:#261B14;border-radius:1rem;width:225px;">Comprar</button></a>
                     </div>
                 </div>
             </section>
             <br>
             <!-- FIM LOOP -->
-        <?php }
+    <?php }
         $contador += 1;
     } while ($row_rs_produto = mysqli_fetch_assoc($rs_produto)); ?>
 </div>

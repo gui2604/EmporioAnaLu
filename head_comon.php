@@ -8,4 +8,5 @@
 <link rel="stylesheet" href="./assets/css/medias.css">
 <link rel="stylesheet" href="./assets/css/content.css">
 <link rel="manifest" href="./pwa/manifest.json">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-...." crossorigin="anonymous" />
 <script type="text/javascript" src="engine1/jquery.js"></script>

@@ -1,4 +1,6 @@
-<?php require("conectionDB.php");
+<?php 
+include "adm_autenticacao.php";
+require"conectionDB.php";
 
 //Validando a existência dos dados
 if (isset($_POST["submit"])) {

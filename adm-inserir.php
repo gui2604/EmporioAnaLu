@@ -1,4 +1,6 @@
-<?php require("conectionDB.php");
+<?php 
+include "adm_autenticacao.php";
+require("conectionDB.php");
 
 $query_rs_categorias = "SELECT * FROM tb_categorias ORDER BY idCategoria ASC;";
 $rs_categorias = mysqli_query($conn_bd_emporio, $query_rs_categorias) or die(mysqli_error($conn_bd_emporio));

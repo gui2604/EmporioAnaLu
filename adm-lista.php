@@ -1,4 +1,6 @@
-<?php require("conectionDB.php"); ?>
+<?php 
+include "adm_autenticacao.php";
+require "conectionDB.php"; ?>
 
 <?php
 $query_rs_produto = "SELECT * FROM tb_produtos INNER JOIN tb_categorias ON tb_categorias.idCategoria = tb_produtos.idCategoria ORDER BY tb_produtos.idProduto DESC;";
