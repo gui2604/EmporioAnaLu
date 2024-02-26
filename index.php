@@ -1,6 +1,6 @@
 <?php require("conectionDB.php"); ?>
 <?php
-$query_rs_maisprocurados = "SELECT * FROM tb_produtos WHERE tb_produtos.ativo = 1 AND tb_produtos.home = 1 LIMIT 6;";
+$query_rs_maisprocurados = "SELECT * FROM tb_produtos WHERE tb_produtos.ativo = 1 AND tb_produtos.home = 1;";
 $rs_maisprocurados = mysqli_query($conn_bd_emporio, $query_rs_maisprocurados) or die(mysqli_error($conn_bd_emporio));
 $row_rs_maisprocurados = mysqli_fetch_assoc($rs_maisprocurados);
 ?>

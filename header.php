@@ -5,8 +5,10 @@
         <!-- BARRA DE PESQUISA -->
         <form class="search-bar" action="resultado-busca.php" method="get" id="form_busca">
             <input type="text" placeholder="O que você procura?" name="produto" id="produto" required>
-            <button type="submit" class="btn btn-default botao_lupa">
-                <img src="./assets/imagens/search.png" alt="imagem de lupe de pesquisa">
+            <button type="submit" class="btn btn-default botao_lupa" style="background-color:#261B14;">
+                <div style="background-coor:#261B14;font-size:2.4rem;color:white;">
+                    Pesquisar
+                </div>
             </button>
         </form>
         <!-- Texto do Header -->
