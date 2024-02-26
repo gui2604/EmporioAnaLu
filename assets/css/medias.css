@@ -1,6 +1,6 @@
 @media screen and (min-width: 1301px){
     .galeria-iframe{
-        height:350px;
+        height:370px;
     }
 }
 
@@ -10,13 +10,17 @@
     }
 
     .galeria-iframe {
-        height:250px;
+        height:300px;
     }
 }
 
 @media screen and (max-width:1050px){
     .search-bar{
         font-size:1.4rem;
+    }
+
+    .galeria-iframe {
+        height:260px;
     }
 }
 
@@ -28,13 +32,6 @@
     .logo_responsivo {
         width:18rem;
     }
-
-    /* .botao_lupa img {
-        width: 5rem;
-        height: auto;
-        min-height: 3rem;
-        min-width: 3rem;
-    } */
 
     .texto-reset-titulo {
         font-size: 2rem;

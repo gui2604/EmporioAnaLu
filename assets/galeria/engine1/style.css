@@ -220,7 +220,7 @@
 	z-index:60;
 	width: 2.4em;	
 	height: 3.2em;
-	background-image: url(./arrows.png);
+	/* background-image: url(./arrows.png); */
 	background-size:200%;
 }
 #wowslider-container1 a.ws_next{
