@@ -6,7 +6,7 @@
     <title>Erro de acesso administrativo</title>
 </head>
 <body>
-    <img src="./assets/imagens/logo-ctec.png" width="100">
+    <img src="./assets/imagens/logo_emporio.png" width="100">
     <h1>Erro de acesso administrativo</h1>
     <img src="./assets/imagens/login-erro.gif"><br><br><br>
 

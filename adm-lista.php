@@ -20,6 +20,7 @@ $row_rs_produto = mysqli_fetch_assoc($rs_produto);
 <body>
     <img src="./assets/imagens/logo_analu.png" width="100" alt="">
     <h1>Painel Administrativo do Site - Lista</h1>
+    <p><a href="adm_logout.php"><img src="./assets/imagens/close.png"></a></p>
     <!-- tabela -->
     <table width="100%">
         <!-- corpo da tabela(pode ter cabeçalho (<thead>) ou rodapé também (<tfooter>)) -->
