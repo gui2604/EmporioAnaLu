@@ -12,4 +12,8 @@
 <file name="loading.gif" server="C:/xampp/htdocs/AulaCtec/" local="131562083060000000" remote="131562119060000000" Dst="0" />
 <file name="next.png" server="C:/xampp/htdocs/AulaCtec/" local="131562083060000000" remote="131562119060000000" Dst="0" />
 <file name="prev.png" server="C:/xampp/htdocs/AulaCtec/" local="131562083060000000" remote="131562119060000000" Dst="0" />
+<file name="loading.gif" server="ftp.miniemporioanalu.com.br/httpdocs/" local="133497910194906620" remote="133534308000000000" Dst="0" />
+<file name="prev.png" server="ftp.miniemporioanalu.com.br/httpdocs/" local="133497910194906620" remote="133534308000000000" Dst="0" />
+<file name="next.png" server="ftp.miniemporioanalu.com.br/httpdocs/" local="133497910194906620" remote="133534308000000000" Dst="0" />
+<file name="close.png" server="ftp.miniemporioanalu.com.br/httpdocs/" local="133497910194906620" remote="133534308000000000" Dst="0" />
 </dwsync>

@@ -4,7 +4,7 @@
         <a href="index.php"><img src="./assets/imagens/logo.png" alt="logo mini empório AnaLu" class="logo_responsivo"></a>
         <!-- BARRA DE PESQUISA -->
         <form class="search-bar" action="resultado-busca.php" method="get" id="form_busca">
-            <input type="text" placeholder="O que você procura?" name="produto" id="produto" required>
+            <input type="text" placeholder="Buscar no site" name="produto" id="produto" required>
             <button type="submit" class="btn btn-default botao_lupa" style="background-color:#261B14">
                 <div style="color:white;">
                     Pesquisar
@@ -13,8 +13,8 @@
         </form>
         <!-- Texto do Header -->
         <div class="header-text">
-            <p>Horário de Atendimento:</p>
-            <p>10h às 20h</p>
+            <p>Horário de atendimento online:</p>
+            <p>Segunda a sexta: 10h às 18h</p>
         </div>
     </section>
     <!-- Barra de Navegação -->

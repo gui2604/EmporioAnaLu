@@ -3,9 +3,9 @@
 <file name="conectionDB.php" server="ftp.miniemporioanalu.com.br/httpdocs/" local="133534239473077268" remote="133534239600000000" Dst="0" />
 <file name="head_comon.php" server="ftp.miniemporioanalu.com.br/httpdocs/" local="133531648857978337" remote="133534237200000000" Dst="0" />
 <file name="index.php" server="ftp.miniemporioanalu.com.br/httpdocs/" local="133534217945777421" remote="133534239000000000" Dst="0" />
-<file name="header.php" server="ftp.miniemporioanalu.com.br/httpdocs/" local="133534229325495408" remote="133534237200000000" Dst="0" />
-<file name="resultado-busca.php" server="ftp.miniemporioanalu.com.br/httpdocs/" local="133518779589003196" remote="133534237200000000" Dst="0" />
-<file name="conteudo.php" server="ftp.miniemporioanalu.com.br/httpdocs/" local="133531649987437433" remote="133534237200000000" Dst="0" />
+<file name="header.php" server="ftp.miniemporioanalu.com.br/httpdocs/" local="133534294365967841" remote="133534306800000000" Dst="0" />
+<file name="resultado-busca.php" server="ftp.miniemporioanalu.com.br/httpdocs/" local="133534273051925392" remote="133534306800000000" Dst="0" />
+<file name="conteudo.php" server="ftp.miniemporioanalu.com.br/httpdocs/" local="133534287135519804" remote="133534306800000000" Dst="0" />
 <file name="lowMain.php" server="ftp.miniemporioanalu.com.br/httpdocs/" local="133531711404589889" remote="133534237200000000" Dst="0" />
 <file name="footer.php" server="ftp.miniemporioanalu.com.br/httpdocs/" local="133517904256514573" remote="133534237200000000" Dst="0" />
 <file name="scripts.php" server="ftp.miniemporioanalu.com.br/httpdocs/" local="133531647677610729" remote="133534237200000000" Dst="0" />
@@ -19,9 +19,10 @@
 <file name="adm_login.php" server="ftp.miniemporioanalu.com.br/httpdocs/" local="133531684804627934" remote="133534240200000000" Dst="0" />
 <file name="adm_verifica.php" server="ftp.miniemporioanalu.com.br/httpdocs/" local="133531660826885580" remote="133534240200000000" Dst="0" />
 <file name="adm_logout.php" server="ftp.miniemporioanalu.com.br/httpdocs/" local="133530796863735496" remote="133534240200000000" Dst="0" />
-<file name="detalhes.php" server="ftp.miniemporioanalu.com.br/httpdocs/" local="133517870426699306" remote="133534240200000000" Dst="0" />
-<file name="doces.php" server="ftp.miniemporioanalu.com.br/httpdocs/" local="133531712267847074" remote="133534240200000000" Dst="0" />
-<file name="paes.php" server="ftp.miniemporioanalu.com.br/httpdocs/" local="133531712016794110" remote="133534240200000000" Dst="0" />
-<file name="queijos.php" server="ftp.miniemporioanalu.com.br/httpdocs/" local="133531711894956932" remote="133534240200000000" Dst="0" />
-<file name="variedades.php" server="ftp.miniemporioanalu.com.br/httpdocs/" local="133531712107663353" remote="133534240200000000" Dst="0" />
+<file name="detalhes.php" server="ftp.miniemporioanalu.com.br/httpdocs/" local="133534274032171357" remote="133534306800000000" Dst="0" />
+<file name="doces.php" server="ftp.miniemporioanalu.com.br/httpdocs/" local="133534250269272535" remote="133534306800000000" Dst="0" />
+<file name="paes.php" server="ftp.miniemporioanalu.com.br/httpdocs/" local="133534250562164396" remote="133534306800000000" Dst="0" />
+<file name="queijos.php" server="ftp.miniemporioanalu.com.br/httpdocs/" local="133534250356494346" remote="133534306800000000" Dst="0" />
+<file name="variedades.php" server="ftp.miniemporioanalu.com.br/httpdocs/" local="133534250486040323" remote="133534306800000000" Dst="0" />
+<file name="README.md" server="ftp.miniemporioanalu.com.br/httpdocs/" local="133497910190116770" remote="133534306800000000" Dst="0" />
 </dwsync>
