@@ -14,20 +14,30 @@
     }
 }
 
+@media screen and (max-width:1000px){
+    .search-bar{
+        font-size:1.4rem;
+    }
+}
+
 @media screen and (max-width: 900px) {
     * {
-        font-size: 2rem;
+        font-size: 1.4rem;
     }
 
-    .botao_lupa img {
+    .logo_responsivo {
+        width:18rem;
+    }
+
+    /* .botao_lupa img {
         width: 5rem;
         height: auto;
         min-height: 3rem;
         min-width: 3rem;
-    }
+    } */
 
     .texto-reset-titulo {
-        font-size: 2.4rem;
+        font-size: 2rem;
     }
 
     .texto-reset-imagem {
@@ -88,5 +98,9 @@
 @media screen and (max-width:600px){
     .galeria-iframe {
         height:135px;
+    }
+
+    .search-bar{
+        text-align: center;
     }
 }
