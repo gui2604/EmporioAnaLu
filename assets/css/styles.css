@@ -88,14 +88,8 @@ header section {
   }
 
 .botao_lupa {
-    width: auto;
+    width: 6rem;
     background-color: #261B14;
-    border-radius:0;
-}
-
-.botao_lupa :hover {
-    background-color: #BF9D8A;
-    transition: 1s;
 }
 
 .detalhes button:hover{

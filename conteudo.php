@@ -1,7 +1,7 @@
 <div class="container-fluid">
     <div class="seccao">
         <h1 style="font-size:3.5rem;">
-            <?php // echo($row_rs_produto["categoria"])
+            <?php
             $current_page = basename($_SERVER['PHP_SELF']);
             if ($current_page == 'queijos.php') {
                 echo 'Queijos';
@@ -21,13 +21,13 @@
     <!-- Loop dos registros -->
     <?php $contador = 1;
     do {
+        $nome_do_produto = $row_rs_produto["nome"];
+        $preco_do_produto = $row_rs_produto["preco"];
+        $mensagem_whatsapp = "Olá, estou interessado no produto: $nome_do_produto. Preço: $preco_do_produto";
+        $mensagem_whatsapp_encoded = urlencode($mensagem_whatsapp);
+        $numero_vendedor = '5511947242147';
+        $link_whatsapp = "https://api.whatsapp.com/send?phone=$numero_vendedor&text=$mensagem_whatsapp_encoded";
         if ($contador % 2 == 0) {
-            $nome_do_produto = $row_rs_produto["nome"];
-            $preco_do_produto = $row_rs_produto["preco"];
-            $mensagem_whatsapp = "Olá, estou interessado no produto: $nome_do_produto. Preço: $preco_do_produto";
-            $mensagem_whatsapp_encoded = urlencode($mensagem_whatsapp);
-            $numero_vendedor = '5511947242147';
-            $link_whatsapp = "https://api.whatsapp.com/send?phone=$numero_vendedor&text=$mensagem_whatsapp_encoded";
     ?>
             <section>
                 <div class="row">

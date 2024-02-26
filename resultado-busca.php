@@ -29,7 +29,7 @@ $totalRow_rs_produto = mysqli_num_rows($rs_produto);
 <body>
     <?php include("header.php"); ?> 
 
-    <main class="container-fluid" style="text-align:center;">
+    <main class="container-fluid" style="text-align:center;margin:0;padding:0;">
         <?php
         if($totalRow_rs_produto > 0){
          include("conteudo.php");

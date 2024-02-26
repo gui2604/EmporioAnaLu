@@ -7,7 +7,7 @@ if (isset($_GET['idProduto'])) {
 ;
 
 $query_rs_produto = "SELECT * FROM tb_produtos WHERE tb_produtos.ativo = 1 AND tb_produtos.idProduto = $idProduto;";
-$query_rs_maisprocurados = "SELECT * FROM tb_produtos WHERE tb_produtos.ativo = 1 AND tb_produtos.home = 1 LIMIT 6;";
+$query_rs_maisprocurados = "SELECT * FROM tb_produtos WHERE tb_produtos.ativo = 1 AND tb_produtos.home = 1;";
 
 $rs_produto = mysqli_query($conn_bd_emporio, $query_rs_produto) or die(mysqli_error($conn_bd_emporio));
 $rs_maisprocurados = mysqli_query($conn_bd_emporio, $query_rs_maisprocurados) or die(mysqli_error($conn_bd_emporio));
@@ -42,7 +42,7 @@ $link_whatsapp = "https://api.whatsapp.com/send?phone=$numero_vendedor&text=$men
 <body style="text-align:center;">
     <?php include("header.php"); ?>
 
-    <main class="container-fluid">
+    <main class="container-fluid" style="margin:0;padding:0;">
         <br>
         <div class="row justify-content-center">
             <div class="col-lg-6">
