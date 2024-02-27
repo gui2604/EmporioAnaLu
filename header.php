@@ -4,9 +4,9 @@
         <a href="index.php"><img src="./assets/imagens/logo.png" alt="logo mini empório AnaLu" class="logo_responsivo"></a>
         <!-- BARRA DE PESQUISA -->
         <form class="search-bar" action="resultado-busca.php" method="get" id="form_busca">
-            <input type="text" placeholder="Buscar no site" name="produto" id="produto" required>
+            <input class="barra_input" type="text" placeholder="Buscar no site" name="produto" id="produto" required>
             <button type="submit" class="btn btn-default botao_lupa" style="background-color:#261B14">
-                <div style="color:white;">
+                <div>
                     Pesquisar
                 </div>
             </button>

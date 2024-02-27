@@ -2,6 +2,10 @@
     .galeria-iframe{
         height:370px;
     }
+
+    .wpp, .insta {
+        width:85%;
+    }
 }
 
 @media screen and (max-width: 1300px){
@@ -12,6 +16,10 @@
     .galeria-iframe {
         height:300px;
     }
+
+    .wpp, .insta {
+        width:75%;
+    }
 }
 
 @media screen and (max-width:1050px){
@@ -21,6 +29,14 @@
 
     .galeria-iframe {
         height:260px;
+    }
+
+    .wpp, .insta {
+        width:70%;
+    }
+
+    .texto_contato{
+        font-size: 2rem;
     }
 }
 
@@ -44,6 +60,25 @@
     .galeria-iframe {
         height:200px;
     }
+
+    .texto_contato{
+        font-size: 1.6rem;
+    }
+
+    .wpp, .insta {
+        width: 65%;
+    }
+
+}
+
+@media screen and (max-width:767px){
+    .contato {
+        padding-left:30%;
+    }
+
+    .local {
+        margin-bottom: 5rem;
+    }
 }
 
 @media screen and (max-width: 700px) {
@@ -58,15 +93,7 @@
     }
     
     .logo_responsivo {
-        width:12rem;
-    }
-
-    .contato {
-        font-size: 1.5rem;
-    }
-
-    .local {
-        margin-bottom: 70px;
+        width: 16rem;
     }
 
     .header-text {
@@ -90,6 +117,10 @@
     .galeria-iframe {
         height:150px;
     }
+
+    .contato {
+        padding-left:30%;
+    }
 }
 
 @media screen and (max-width:600px){
@@ -99,5 +130,9 @@
 
     .search-bar{
         text-align: center;
+    }
+    
+    .contato {
+        padding-left:20%;
     }
 }

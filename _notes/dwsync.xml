@@ -13,9 +13,9 @@
 <file name="adm_autenticacao.php" server="ftp.miniemporioanalu.com.br/httpdocs/" local="133530815296318599" remote="133534240200000000" Dst="0" />
 <file name="adm-editar.php" server="ftp.miniemporioanalu.com.br/httpdocs/" local="133531660586324201" remote="133534240200000000" Dst="0" />
 <file name="adm-excluir.php" server="ftp.miniemporioanalu.com.br/httpdocs/" local="133531624083950830" remote="133534240200000000" Dst="0" />
-<file name="adm-inserir.php" server="ftp.miniemporioanalu.com.br/httpdocs/" local="133531623666979102" remote="133534240200000000" Dst="0" />
-<file name="adm-lista.php" server="ftp.miniemporioanalu.com.br/httpdocs/" local="133531623584759773" remote="133534240200000000" Dst="0" />
-<file name="adm_erro.php" server="ftp.miniemporioanalu.com.br/httpdocs/" local="133531621528793100" remote="133534240200000000" Dst="0" />
+<file name="adm-inserir.php" server="ftp.miniemporioanalu.com.br/httpdocs/" local="133534320493499417" remote="133534324800000000" Dst="0" />
+<file name="adm-lista.php" server="ftp.miniemporioanalu.com.br/httpdocs/" local="133534320928530029" remote="133534324200000000" Dst="0" />
+<file name="adm_erro.php" server="ftp.miniemporioanalu.com.br/httpdocs/" local="133534318660777989" remote="133534324800000000" Dst="0" />
 <file name="adm_login.php" server="ftp.miniemporioanalu.com.br/httpdocs/" local="133531684804627934" remote="133534240200000000" Dst="0" />
 <file name="adm_verifica.php" server="ftp.miniemporioanalu.com.br/httpdocs/" local="133531660826885580" remote="133534240200000000" Dst="0" />
 <file name="adm_logout.php" server="ftp.miniemporioanalu.com.br/httpdocs/" local="133530796863735496" remote="133534240200000000" Dst="0" />

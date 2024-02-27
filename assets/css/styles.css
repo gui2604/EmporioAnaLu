@@ -17,6 +17,11 @@ html {
     list-style: none;
     text-decoration: none;
     color: #F0F0F2;
+    background-color: #261B14;
+}
+
+.texto-reset:hover{
+    color:#BF9D8A;
 }
 
 .texto-reset-titulo {
@@ -74,6 +79,7 @@ header section {
     padding-left: 1%;
     background-color: #F0F0F2;
     font-size: 2.5rem;
+    color: #261B14;
   }
   
   .search-bar button {
@@ -90,11 +96,12 @@ header section {
     width: auto;
     background-color: #261B14;
     border-radius: 0;
+    color: white;
 }
 
-.botao_lupa :hover{
-    background-color: #BF9D8A;
-    transition: 0.7s;
+.botao_lupa:hover{
+    color: #BF9D8A;
+    transition: 0.3s;
 }
 
 .detalhes button:hover{
@@ -109,12 +116,12 @@ header section {
     background-color: #593A2E;
 }
 
-.logos {
+/* .logos {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     min-height: 300px;
-}
+} */
 
 footer {
     color:#BF9D8A;
@@ -138,20 +145,25 @@ input[type="text"],
       ::placeholder {
         border: none;
         background-color: #F0F0F2;
+        color: #593A2E;
       }
 
 input{
     outline: none;
 }
 
-.contato{
-    font-size: 3rem;
-}
-
 .direitos {
     font-size: 1.5rem;
 }
 
+.insta, .wpp {
+    text-decoration: none;
+    color: #BF9D8A;
+}
+
+.insta:hover, .wpp:hover{
+    background-color: #593A2E;
+}
 
 
 

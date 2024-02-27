@@ -31,9 +31,3 @@
         <br>
     <?php } while ($row_rs_maisprocurados = mysqli_fetch_assoc($rs_maisprocurados)); ?>
 </section>
-<section class="logos">
-    <a href="index.php"><img src="./assets/imagens/logo_analu.png" alt="logo2 do Mini Empório Analu" class="logo_responsivo"></a>
-    <!-- Link que abre a conversa no whatsapp -->
-    <a href="https://api.whatsapp.com/send?phone=5511947242147" class="wpp" target="_blank"><img
-            src="./assets/imagens/wpp.png" alt="logo do whatsapp"></a>
-</section>

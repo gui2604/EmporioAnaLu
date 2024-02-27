@@ -63,7 +63,7 @@ $link_whatsapp = "https://api.whatsapp.com/send?phone=$numero_vendedor&text=$men
                     <?php echo $row_rs_produto["preco"]; ?>
                 </div>
                 <a href="<?php echo $link_whatsapp ?>" title="" class="botoes"><button type="button" class="texto-reset"
-                        style="font-size:2rem;background-color:#261B14;border-radius:1rem;width:225px;">Comprar</button></a>
+                        style="font-size:2rem;background-color:#261B14;border-radius:1rem;width:225px;">Tenho Interesse</button></a>
             </div>
         </div>
         <br>
