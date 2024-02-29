@@ -6,7 +6,7 @@
     <title>Acesso Administrativo</title>
 </head>
 <body>
-    <img src="./assets/imagens/logo_analu.png" width="100">
+    <a href="index.php"><img src="./assets/imagens/logo_analu.png" width="100"></a>
     <h1>Acesso Administrativo</h1>
     <img src="./assets/imagens/login.gif">    
     <br><br><br>

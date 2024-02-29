@@ -116,13 +116,6 @@ header section {
     background-color: #593A2E;
 }
 
-/* .logos {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    min-height: 300px;
-} */
-
 footer {
     color:#BF9D8A;
     display: flex;
@@ -165,7 +158,9 @@ input{
     background-color: #593A2E;
 }
 
-
+.titulo_produto {
+    white-space: nowrap;
+}
 
 
 
