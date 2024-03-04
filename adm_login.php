@@ -12,7 +12,7 @@
     <br><br><br>
 
     <form action="adm_verifica.php" method="post">
-        E-mail: <input name="email" type="email" id="email" size="50" required><br><br>
+        E-mail: <input name="email" type="email" id="email" required><br><br>
         Senha: <input type="password" name="senha" id="senha" required><br><br>
         <input type="submit" name="submit" id="submit">
     </form>
