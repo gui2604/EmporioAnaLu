@@ -9,8 +9,8 @@ if(empty($_POST["email"]) || empty($_POST["senha"])){
 };
 
 if(isset($_POST["submit"])){
-    $email = $_POST["email"];
-    $senha = $_POST["senha"];
+    $email = mysqli_real_escape_string($conn_bd_emporio, $_POST["email"]);
+    $senha = mysqli_real_escape_string($conn_bd_emporio, $_POST["senha"]);
 };
 
 //consulta de usuário
