@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acesso Administrativo</title>
 </head>
-<body>
+<body style="text-align:center;">
     <a href="index.php"><img src="./assets/imagens/logo_analu.png" width="100"></a>
     <h1>Acesso Administrativo</h1>
     <img src="./assets/imagens/login.gif">    
