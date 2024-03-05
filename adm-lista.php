@@ -1,4 +1,4 @@
-<?php 
+<?php
 include "adm_autenticacao.php";
 require "conectionDB.php"; ?>
 
@@ -15,12 +15,24 @@ $row_rs_produto = mysqli_fetch_assoc($rs_produto);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Painel Administrativo do Site</title>
+
+    <style>
+        .botoes_adm:hover {
+            background-color: #808080;
+        }
+    </style>
 </head>
 
 <body>
-    <img src="./assets/imagens/logo_analu.png" width="100" alt="">
+    <div style="display:flex;justify-content:space-between;">
+        <img src="./assets/imagens/logo_analu.png" width="100" alt="">
+        <p><strong>Usuário Administrador:</strong>&nbsp;<?php echo $_SESSION["email"]; ?></p>
+    </div>
     <h1>Painel Administrativo do Site - Lista</h1>
-    <p><a href="adm_logout.php"><img src="./assets/imagens/close.png"></a></p>
+    <div style="display:flex;justify-content:space-evenly;align-items:center;">
+        <a href="adm_logout.php" class="botoes_adm"><img src="./assets/imagens/logout.jpg" width="40"></a>
+        <a href="adm_cadastrar.php" class="botoes_adm"><img src="./assets/imagens/usuario.png" width="40"></a>
+    </div>
     <!-- tabela -->
     <table width="100%">
         <!-- corpo da tabela(pode ter cabeçalho (<thead>) ou rodapé também (<tfooter>)) -->
@@ -47,8 +59,7 @@ $row_rs_produto = mysqli_fetch_assoc($rs_produto);
                     <!-- colunas -->
                     <td><a href="adm-inserir.php"><img src="./assets/imagens/inserir.png" width="20" height="20" alt=""></a></td>
                     <td><a href="adm-editar.php?idProduto=<?php echo $row_rs_produto['idProduto']; ?>"><img src="./assets/imagens/edit.gif" width="16" height="15" alt=""></a></td>
-                    <td><a href="adm-excluir.php?idProduto=<?php echo $row_rs_produto['idProduto']; ?>" onclick="return confirm('Tem certeza que deseja excluir esse produto?')"><img
-                                src="./assets/imagens/delete.gif" width="16" height="15" alt=""></a></td>
+                    <td><a href="adm-excluir.php?idProduto=<?php echo $row_rs_produto['idProduto']; ?>" onclick="return confirm('Tem certeza que deseja excluir esse produto?')"><img src="./assets/imagens/delete.gif" width="16" height="15" alt=""></a></td>
                     <td>
                         <?php echo $row_rs_produto['idProduto']; ?>
                     </td>

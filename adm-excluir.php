@@ -1,6 +1,6 @@
 <?php 
 include "adm_autenticacao.php";
-require("conectionDB.php");
+require "conectionDB.php";
 
 if(isset($_GET['idProduto'])){
     $idProduto = $_GET['idProduto'];
