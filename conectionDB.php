@@ -15,8 +15,8 @@ $database_conn_bd_emporio  = "ctsdigital2011_bdemporio";
 $username_conn_bd_emporio  = "ctsdi_analu";
 $password_conn_bd_emporio  = "Doorsoftware22@!";
 //Criando a conexão usando as variáveis
-
 */
+
 
 
 

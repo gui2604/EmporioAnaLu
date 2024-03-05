@@ -27,6 +27,7 @@ if (isset($_POST["submit"])){
 
 </head>
 <body style="text-align:center;">
+    <img src="./assets/imagens/logo_analu.png">
     <h1>Cadastrar Usuário Administrador</h1>
     <form method="post" enctype="multipart/form-data">
         Email: <input type="email" name="email" id="email" required><br><br>

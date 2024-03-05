@@ -2,8 +2,8 @@
 <?php
 
 if (isset($_GET["produto"])){
-    $produto = $_GET["produto"];
-}
+    $produto = mysqli_escape_string($conn_bd_emporio, $_GET["produto"]);
+};
 
 $query_rs_produto = "SELECT * FROM tb_produtos WHERE tb_produtos.ativo = 1 AND tb_produtos.nome LIKE '%$produto%' OR tb_produtos.descricao LIKE '%$produto%'";
 $query_rs_maisprocurados = "SELECT * FROM tb_produtos WHERE tb_produtos.ativo = 1 AND tb_produtos.home = 1 LIMIT 6;";
