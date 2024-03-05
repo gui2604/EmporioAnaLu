@@ -26,7 +26,7 @@ $row_rs_produto = mysqli_fetch_assoc($rs_produto);
 <body>
     <div style="display:flex;justify-content:space-between;">
         <img src="./assets/imagens/logo_analu.png" width="100" alt="">
-        <p><strong>Usuário Administrador:</strong>&nbsp;<?php echo $_SESSION["email"]; ?></p>
+        <p><strong>Usuário Administrador Logado:</strong>&nbsp;<?php echo $_SESSION["email"]; ?>&nbsp;&nbsp;&nbsp;</p>
     </div>
     <h1>Painel Administrativo do Site - Lista</h1>
     <div style="display:flex;justify-content:space-evenly;align-items:center;">
