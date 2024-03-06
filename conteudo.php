@@ -41,7 +41,7 @@
                         <p class="preco_produto">Preço: R$
                             <?php echo $row_rs_produto["preco"]; ?>
                         </p>
-                        <a href="<?php echo $link_whatsapp; ?>" target="_blank" title="" class="botoes" style="margin-bottom:20px;"><button type="button" class="texto-reset" style="font-size:2rem;border-radius:1rem;width:225px;">Tenho Interesse</button></a>
+                        <a href="<?php echo $link_whatsapp; ?>" target="_blank" title="<?php echo $row_rs_produto["nome"]; ?>" class="botoes" style="margin-bottom:20px;"><button type="button" class="texto-reset" style="font-size:2rem;border-radius:1rem;width:225px;">Tenho Interesse</button></a>
                     </div>
                     <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 d-flex flex-column justify-content-center"> <a href="./assets/imagens/<?php echo $row_rs_produto["imagem"] ?>" title="<?php echo $row_rs_produto["nome"]; ?>" data-lightbox="example-1"> <img src="assets/imagens/<?php echo $row_rs_produto["imagemThumb"]; ?>" alt="<?php echo $row_rs_produto["nome"]; ?>" title="<?php echo $row_rs_produto["nome"]; ?>" class="imagem_produto" style="border-radius:2rem;margin-bottom:50px;"></a></div>
                 </div>
@@ -61,7 +61,7 @@
                         <p class="preco_produto">Preço: R$
                             <?php echo $row_rs_produto["preco"]; ?>
                         </p>
-                        <a href="<?php echo $link_whatsapp; ?>" target="_blank" title="" class="botoes" style="margin-bottom:50px;"><button type="button" class="texto-reset" style="font-size:2rem;background-color:#261B14;border-radius:1rem;width:225px;">Tenho Interesse</button></a>
+                        <a href="<?php echo $link_whatsapp; ?>" target="_blank" title="<?php echo $row_rs_produto["nome"]; ?>" class="botoes" style="margin-bottom:50px;"><button type="button" class="texto-reset" style="font-size:2rem;background-color:#261B14;border-radius:1rem;width:225px;">Tenho Interesse</button></a>
                     </div>
                 </div>
             </section>
