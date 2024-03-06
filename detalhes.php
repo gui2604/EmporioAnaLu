@@ -49,11 +49,11 @@ $link_whatsapp = "https://api.whatsapp.com/send?phone=$numero_vendedor&text=$men
                 <h2 class="product-title" style="color:#F27457;font-size:3.5rem;">
                     <?php echo $row_rs_produto["nome"]; ?>
                 </h2>
-                <div class=""><a href="./assets/imagens/<?php echo $row_rs_produto["imagem"]; ?>"
+                <div><a href="./assets/imagens/<?php echo $row_rs_produto["imagem"]; ?>"
                         title="<?php echo $row_rs_produto["nome"]; ?>" data-lightbox="example-1">
                         <img src="./assets/imagens/<?php echo $row_rs_produto["imagem"]; ?>"
                             alt="<?php echo $row_rs_produto["nome"]; ?>"
-                            style="max-width:1200px;max-height:500px;border-radius:2rem;"></a>
+                            style="max-width:450px;max-height:500px;border-radius:2rem;"></a>
                 </div>
                 <br>
                 <p class="descricao_produto">
