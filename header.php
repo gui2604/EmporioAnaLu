@@ -18,8 +18,8 @@
         </div>
     </section>
     <!-- Barra de Navegação -->
-    <nav>
-        <ul class="d-flex">
+    <nav class="d-flex">
+        
             <li>
                 <a href="queijos.php" class="texto-reset">
                     <p class="texto-reset-titulo">Queijos</p>
@@ -44,6 +44,6 @@
                     <img class="texto-reset-imagem" src="./assets/imagens/food.png" alt="ícone de variedades">
                 </a>
             </li>
-        </ul>
+        
     </nav>
 </header>

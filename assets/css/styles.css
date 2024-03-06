@@ -34,13 +34,13 @@ body {
     min-width: 48rem;
 }
 
-header nav ul{
+header nav{
     justify-content: space-evenly;
     background-color: #261B14;
     text-wrap: nowrap;
 }
 
-header nav ul li a{
+header nav li a{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -48,7 +48,7 @@ header nav ul li a{
     padding: 1.45rem;
 }
 
-header nav ul li:hover{
+header nav li:hover{
     background-color: #BF9D8A;
     transition: .5s;
 }
