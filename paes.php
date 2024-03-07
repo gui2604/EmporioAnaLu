@@ -13,7 +13,7 @@ $row_rs_maisprocurados = mysqli_fetch_assoc($rs_maisprocurados);
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=<?php echo $tela ?>">
     <title>Pães de Queijo do Mini Empório AnaLu</title>
     <meta name="description" content="Paes De Queijo De Varios Sabores e Diferentes Tipos">
     <meta name="keywords" content="Paes de Queijo">

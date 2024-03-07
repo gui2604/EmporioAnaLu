@@ -15,4 +15,8 @@ $password_conn_bd_emporio  = "Doorsoftware22@!";
 
 $conn_bd_emporio = mysqli_connect($hostname_conn_bd_emporio, $username_conn_bd_emporio, $password_conn_bd_emporio, $database_conn_bd_emporio) or trigger_error(mysqli_connect_errno(), E_USER_ERROR);
 mysqli_set_charset($conn_bd_emporio, 'utf8');
+
+//variaveis globais:
+
+$tela = 0.625;
 ?>

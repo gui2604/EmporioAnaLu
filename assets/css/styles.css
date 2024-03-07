@@ -37,7 +37,6 @@ body {
 header nav{
     justify-content: space-evenly;
     background-color: #261B14;
-    text-wrap: nowrap;
 }
 
 header nav li a{

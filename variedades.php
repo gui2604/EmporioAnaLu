@@ -13,7 +13,7 @@ $row_rs_maisprocurados = mysqli_fetch_assoc($rs_maisprocurados);
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=<?php echo $tela ?>">
     <title>Variedades do Mini Empório AnaLu</title>
     <meta name="description" content="Aqui Voce Encontra Outras Variedades De Produtos">
     <meta name="keywords" content="Variedades, Mineiro">

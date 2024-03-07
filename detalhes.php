@@ -30,7 +30,7 @@ $link_whatsapp = "https://api.whatsapp.com/send?phone=$numero_vendedor&text=$men
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=<?php echo $tela ?>">
     <title>Detalhes do produto
         <?php echo $row_rs_produto["nome"]; ?>
     </title>
