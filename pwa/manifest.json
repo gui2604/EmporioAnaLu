@@ -2,7 +2,7 @@
   "name": "MiniEmporio AnaLu App",
   "short_name": "EmporioAnaLu",
   "start_url": "index.php",
-  "scope": "/",
+  "scope": "./",
   "icons": [
     {
       "src": "logo192.png",
