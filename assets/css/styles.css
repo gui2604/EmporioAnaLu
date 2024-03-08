@@ -1,4 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 * {
     padding: 0;
@@ -80,6 +80,7 @@ header section {
     background-color: #F0F0F2;
     font-size: 2.5rem;
     color: #261B14;
+    border-radius: 1.2rem;
   }
   
   .search-bar button {
@@ -97,6 +98,7 @@ header section {
     background-color: #261B14;
     border-radius: 0;
     color: white;
+    border-radius: 1rem;
 }
 
 .botao_lupa:hover{

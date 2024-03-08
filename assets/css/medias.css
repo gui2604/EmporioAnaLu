@@ -24,7 +24,7 @@
 
 @media screen and (max-width:1050px){
     .search-bar{
-        font-size:1.4rem;
+        font-size: 1.4rem;
     }
 
     .galeria-iframe {
@@ -46,7 +46,7 @@
     }
 
     .logo_responsivo {
-        width:18rem;
+        width:25rem;
     }
 
     .texto-reset-titulo {
@@ -102,12 +102,11 @@
 
     .header-text {
         margin:30px 0;
-        padding: 10px;
+        padding: 0.7rem;
     }
 
     .search-bar {
         margin: 20px 0 0 0;
-        min-width: 20rem;
     }
 
     .texto-reset-titulo {
@@ -129,6 +128,7 @@
     .titulo_produto {
         font-size:2.5rem !important;
     }
+
 }
 
 @media screen and (max-width:600px){

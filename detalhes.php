@@ -36,19 +36,21 @@ $link_whatsapp = "https://api.whatsapp.com/send?phone=$numero_vendedor&text=$men
     </title>
     <meta name="description" content="">
     <meta name="keywords" content="">
-    <?php include("head_comon.php"); ?>
+    <?php include "head_comon.php"; ?>
 </head>
 
 <body style="text-align:center;">
-    <?php include("header.php"); ?>
+    <?php include "header.php"; ?>
 
     <main class="container-fluid" style="margin:0;padding:0;">
         <br>
         <div class="row justify-content-center">
             <div class="col-lg-6">
+                <!-- titulo do produto de detalhes -->
                 <h2 class="product-title" style="color:#F27457;font-size:3.5rem;">
                     <?php echo $row_rs_produto["nome"]; ?>
                 </h2>
+                <!-- imagem do produto de detalhes -->
                 <div><a href="./assets/imagens/<?php echo $row_rs_produto["imagem"]; ?>"
                         title="<?php echo $row_rs_produto["nome"]; ?>" data-lightbox="example-1">
                         <img src="./assets/imagens/<?php echo $row_rs_produto["imagem"]; ?>"
@@ -56,12 +58,15 @@ $link_whatsapp = "https://api.whatsapp.com/send?phone=$numero_vendedor&text=$men
                             style="max-width:450px;max-height:500px;border-radius:2rem;"></a>
                 </div>
                 <br>
+                <!-- descricao do produto de detalhes -->
                 <p class="descricao_produto">
                     <?php echo $row_rs_produto["descricao"]; ?>
                 </p>
+                <!-- preco do produto de detalhes -->
                 <div class="preco_produto">Preço: R$
                     <?php echo $row_rs_produto["preco"]; ?>
                 </div>
+                <!-- botao de comprar dos produtos de detalhes -->
                 <a href="<?php echo $link_whatsapp; ?>" title="" class="botoes"><button type="button" class="texto-reset"
                         style="font-size:2rem;background-color:#261B14;border-radius:1rem;width:225px;">Tenho Interesse</button></a>
             </div>
