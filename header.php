@@ -1,7 +1,7 @@
 <header class="container-fluid" style="margin:0;padding:0;width:100%;">
     <section class="topo container-fluid" style="margin:0;">
         <!-- logo MiniEmpório AnaLu -->
-        <a href="index.php" title="link para a index"><img src="./assets/imagens/logo.png" alt="logo mini emporio AnaLu" class="logo_responsivo" title="logo do mini emporio AnaLu"></a>
+        <a href="index.php" title="link do logo mini emporio AnaLu"><img src="./assets/imagens/logo.png" alt="logo mini emporio AnaLu" class="logo_responsivo" title="logo do mini emporio AnaLu"></a>
         <!-- BARRA DE PESQUISA -->
         <form class="search-bar" action="resultado-busca.php" method="get" id="form_busca">
             <input class="barra_input" type="text" placeholder="Buscar no site" name="produto" id="produto" required>
@@ -15,7 +15,7 @@
         <!-- Texto do Header -->
         <div class="header-text">
             <p>Horário de atendimento online:</p>
-            <p>Segunda a sexta: 10h às 18h</p>
+            <p>Segunda a Sexta: 10h às 18h</p>
         </div>
     </section>
     <!-- Barra de Navegação -->

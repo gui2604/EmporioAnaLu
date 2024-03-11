@@ -14,6 +14,14 @@ $row_rs_maisprocurados = mysqli_fetch_assoc($rs_maisprocurados);
     <title>Mini Empório AnaLu</title>
     <meta name="description" content="Produtos de Minas Gerais do Mini Empório AnaLu">
     <meta name="keywords" content="Emporio, AnaLu, Minas, Minas Gerais, Gerais, Queijos, Doces, Produtos de Minas">
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "url": "https://miniemporioanalu.com.br",
+            "logo": "https://miniemporioanalu.com.br/assets/imagens/logo.png"
+        }
+    </script>
     <?php include("head_comon.php"); ?>
 </head>
 
