@@ -3,8 +3,7 @@
 
 if (isset($_GET['idProduto'])) {
     $idProduto = $_GET['idProduto'];
-}
-;
+};
 
 $query_rs_produto = "SELECT * FROM tb_produtos WHERE tb_produtos.ativo = 1 AND tb_produtos.idProduto = $idProduto;";
 $query_rs_maisprocurados = "SELECT * FROM tb_produtos WHERE tb_produtos.ativo = 1 AND tb_produtos.home = 1;";
@@ -44,33 +43,21 @@ $link_whatsapp = "https://api.whatsapp.com/send?phone=$numero_vendedor&text=$men
 
     <main class="container-fluid" style="margin:0;padding:0;">
         <br>
-        <div class="row justify-content-center">
-            <div class="col-lg-6">
-                <!-- titulo do produto de detalhes -->
-                <h2 class="product-title" style="color:#F27457;font-size:3.5rem;">
+        <section class="row" style="margin: 3%;">
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 d-flex flex-column justify-content-center"><a href="./assets/imagens/<?php echo ($row_rs_produto["imagem"]) ?>" title="<?php echo $row_rs_produto["nome"]; ?>" data-lightbox="example-1"> <img src="assets/imagens/<?php echo $row_rs_produto["imagemThumb"]; ?>" alt="<?php echo $row_rs_produto["nome"]; ?>" title="<?php echo $row_rs_produto["nome"]; ?>" class="imagem_produto" style="border-radius:2rem;"></a></div>
+            <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 d-flex flex-column justify-content-center">
+                <h2 class="titulo_produto" style="color:#F27457;">
                     <?php echo $row_rs_produto["nome"]; ?>
                 </h2>
-                <!-- imagem do produto de detalhes -->
-                <div><a href="./assets/imagens/<?php echo $row_rs_produto["imagem"]; ?>"
-                        title="<?php echo $row_rs_produto["nome"]; ?>" data-lightbox="example-1">
-                        <img src="./assets/imagens/<?php echo $row_rs_produto["imagem"]; ?>"
-                            alt="<?php echo $row_rs_produto["nome"]; ?>"
-                            style="max-width:450px;max-height:500px;border-radius:2rem;"></a>
-                </div>
-                <br>
-                <!-- descricao do produto de detalhes -->
                 <p class="descricao_produto">
                     <?php echo $row_rs_produto["descricao"]; ?>
                 </p>
-                <!-- preco do produto de detalhes -->
-                <div class="preco_produto">Preço: R$
+                <p class="preco_produto">Preço: R$
                     <?php echo $row_rs_produto["preco"]; ?>
-                </div>
-                <!-- botao de comprar dos produtos de detalhes -->
-                <a href="<?php echo $link_whatsapp; ?>" title="" class="botoes"><button type="button" class="texto-reset"
-                        style="font-size:2rem;background-color:#261B14;border-radius:1rem;width:225px;">Tenho Interesse</button></a>
+                </p>
+                <a href="<?php echo $link_whatsapp; ?>" target="_blank" title="<?php echo $row_rs_produto["nome"]; ?>" class="botoes" style="margin-bottom:50px;"><button type="button" class="texto-reset" style="font-size:2rem;background-color:#261B14;border-radius:1rem;width:225px;">Tenho Interesse</button></a>
             </div>
-        </div>
+        </section>
         <br>
 
         <?php include("lowMain.php"); ?>
