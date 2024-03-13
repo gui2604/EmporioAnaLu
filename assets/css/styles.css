@@ -163,3 +163,7 @@ input{
 .titulo_produto {
     white-space: nowrap;
 }
+
+.titulo_destaque {
+    font-size: 3.2rem;
+}

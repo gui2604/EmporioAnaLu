@@ -22,6 +22,12 @@
     }
 }
 
+@media screen and (max-width:1120px){
+    .texto-botao-lupa {
+        font-size:2rem;
+    }
+}
+
 @media screen and (max-width:1050px){
     .search-bar{
         font-size: 1.4rem;
@@ -38,6 +44,7 @@
     .texto_contato{
         font-size: 2rem;
     }
+
 }
 
 @media screen and (max-width: 900px) {
@@ -146,5 +153,9 @@
 
     .imagem_produto{
         max-width:350px;
+    }
+
+    .titulo_destaque{
+        font-size: 2rem;
     }
 }

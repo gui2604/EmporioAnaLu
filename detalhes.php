@@ -46,7 +46,7 @@ $link_whatsapp = "https://api.whatsapp.com/send?phone=$numero_vendedor&text=$men
         <section class="row" style="margin: 3%;">
             <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 d-flex flex-column justify-content-center"><a href="./assets/imagens/<?php echo ($row_rs_produto["imagem"]) ?>" title="<?php echo $row_rs_produto["nome"]; ?>" data-lightbox="example-1"> <img src="assets/imagens/<?php echo $row_rs_produto["imagemThumb"]; ?>" alt="<?php echo $row_rs_produto["nome"]; ?>" title="<?php echo $row_rs_produto["nome"]; ?>" class="imagem_produto" style="border-radius:2rem;"></a></div>
             <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 d-flex flex-column justify-content-center">
-                <h2 class="titulo_produto" style="color:#F27457;">
+                <h2 class="titulo_produto" style="color:#F2C894;">
                     <?php echo $row_rs_produto["nome"]; ?>
                 </h2>
                 <p class="descricao_produto">

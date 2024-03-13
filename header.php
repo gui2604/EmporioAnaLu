@@ -7,7 +7,7 @@
             <input class="barra_input" type="text" placeholder="Buscar no site" name="produto" id="produto" required>
             <!-- botao pesquisar -->
             <button type="submit" class="btn btn-default botao_lupa" style="background-color:#261B14">
-                <div>
+                <div class="texto-botao-lupa">
                     Pesquisar
                 </div>
             </button>
