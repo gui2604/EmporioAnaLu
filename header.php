@@ -15,7 +15,7 @@
         <!-- Texto do Header -->
         <div class="header-text">
             <p>Horário de atendimento online:</p>
-            <p>Segunda a Sexta: 10h às 18h</p>
+            <p>Segunda a Sexta: 09h às 18h</p>
         </div>
     </section>
     <!-- Barra de Navegação -->

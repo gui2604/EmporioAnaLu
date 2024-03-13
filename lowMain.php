@@ -1,6 +1,6 @@
 <!-- Logo2 da loja e contato do whatsapp -->
 <section style="background-color:#261B14;color:#F0F0F2;min-height:12rem;margin:0;padding:0;width:100%;" class="d-flex justify-content-center align-items-center">
-    <h1 style="text-align:center;font-size:1.2em;">Produtos em Destaque</h1>
+    <h1 style="text-align:center;">Produtos em Destaque</h1>
 </section>
 <!-- Produtos mais "visualizados", ou seja que mais clicaram no botão "comprar" -->
 <section class="d-flex justify-content-center row">
@@ -12,7 +12,7 @@
                 </div>
                 <!-- texto e botão do produto -->
                 <div>
-                    <h2 class="titulo_produto" style="color:#F27457;">
+                    <h2 class="titulo_produto" style="color:#F2C894;">
                         <?php echo $row_rs_maisprocurados["nome"]; ?>
                     </h2>
                     <br>
