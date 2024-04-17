@@ -1,6 +1,6 @@
-.htaccess
-(cancelado)ofertas.php
-(standby)linkwpp.php
+/.htaccess
+/(cancelado)ofertas.php
+/(standby)linkwpp.php
 /pwa/
-_*
-conectionDB.php
+/_*
+/conectionDB.php
